@@ -64,7 +64,8 @@ this comes from the German *Zahlen,* meaning "numbers".
 **Exercise 2.1.** The set of all the non-negative integers is called the set of
 *natural numbers*, and is written :math:`\mathbb{N}`. Consider this set
 together with the operation of subtraction: :math:`(\mathbb{N}, -)`. This is
-*not* a monoid. Can you say which of the three laws fail to hold and why?
+*not* a monoid. Can you say which of the three laws fail to hold (it might be
+more than one) and why?
 
 **Exercise 2.2.** The set of *rational numbers* is the set of numbers which can
 be written as the ratio of two integers :math:`\frac{a}{b}`. There is a
