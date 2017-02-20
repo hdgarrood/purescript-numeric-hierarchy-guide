@@ -1,10 +1,12 @@
 Introduction
 ============
 
-This is the first in what I hope will eventually be a series of posts giving an
-introduction to the mathematics behind the numeric hierarchy of type classes in
-PureScript's Prelude, aimed at people who haven't studied mathematics beyond
-a high-school level.
+Welcome to this guide, which aims to give an introduction to the mathematics
+behind the numeric hierarchy of type classes in PureScript's Prelude, aimed at
+people who haven't studied mathematics beyond a high-school level.
+
+Why?
+----
 
 Normally, algebraic structures like rings or fields are only introduced to
 students at undergraduate level. One unfortunate side-effect of this is that
@@ -29,6 +31,22 @@ such as:
 * "I have written a function with a ``Field`` constraint, and I want to find an
   appropriate concrete type which is a ``Field`` to test it with. How do I do
   that?"
+
+Prerequisites
+-------------
+
+I will try to assume as little knowledge of mathematics as I can. If I
+accidentally assume knowledge of something which makes you unable to understand
+a part of this guide, please let me know by `opening an issue on
+GitHub <https://github.com/hdgarrood/purescript-numeric-hierarchy-guide>`_ or
+emailing me at harry@garrood.me.
+
+I will, however, assume a basic knowledge of PureScript. For example, you
+should be reasonably comfortable with what a type class is and how to define
+them.
+
+How to read this guide
+----------------------
 
 I will provide exercises throughout. Whenever you encounter an exercise, I
 strongly recommend you attempt it before reading on! I speak from experience as

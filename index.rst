@@ -8,6 +8,7 @@ Contents:
 
    introduction
    logic
+   monoids
    groups
 
 
