@@ -72,6 +72,10 @@ short-hand notation for this set too: :math:`\mathbb{Q}` (for "quotient").
 Persuade yourself that :math:`(\mathbb{Q}, +)` is a monoid by checking each of
 the three laws. What is the identity element?
 
+**Exercise 2.3.** (Harder) Prove that a monoid can only have one identity
+element. Hint: imagine a monoid which has two distinct identity elements, and
+consider what happens if you combine them with the monoid operation.
+
 One more slightly strange example: Consider a set :math:`X`, which contains
 precisely one element, :math:`x`. We can define an operation :math:`*` on this
 set as follows:
