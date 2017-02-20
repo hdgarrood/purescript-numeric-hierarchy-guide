@@ -75,7 +75,10 @@ the three laws. What is the identity element?
 
 **Exercise 2.3.** (Harder) Prove that a monoid can only have one identity
 element. Hint: imagine a monoid which has two distinct identity elements, and
-consider what happens if you combine them with the monoid operation.
+consider what happens if you combine them with the monoid operation. Be careful
+here: it's not enough to take one specific example of a monoid and show that it
+only has one identity element. You have to construct an argument which will
+work for *any* monoid, which means you aren't allowed to assume anything beyond what is in the definition of a monoid.
 
 One more slightly strange example: Consider a set :math:`X`, which contains
 precisely one element, :math:`x`. We can define an operation :math:`*` on this
