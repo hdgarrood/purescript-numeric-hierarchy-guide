@@ -1,7 +1,8 @@
 A guide to the PureScript numeric hierarchy
 ===========================================
 
-Contents:
+Table of contents
+-----------------
 
 .. toctree::
    :maxdepth: 2
@@ -10,12 +11,4 @@ Contents:
    logic
    monoids
    groups
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
