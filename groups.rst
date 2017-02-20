@@ -1,4 +1,5 @@
-## 2: Groups
+Groups
+======
 
 I will start with a set which you're probably already very familiar with: the
 integers. As you probably know, integers can be added together and multiplied,
