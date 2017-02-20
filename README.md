@@ -8,7 +8,7 @@ Compiled using Sphinx. I have been developing on Ubuntu using the default versio
 $ sudo apt install python3-sphinx
 ```
 
-At the time of writing, on Ubuntu 16.04, (this gets you Sphinx v1.3.6. The
+At the time of writing, on Ubuntu 16.04, this gets you Sphinx v1.3.6. The
 hosting is done by Read The Docs; I'm not sure what version of Sphinx they're
 using, but it seems to work fine between both environments.
 
