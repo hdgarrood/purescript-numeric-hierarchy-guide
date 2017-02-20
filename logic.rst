@@ -115,8 +115,8 @@ F         F         T
 
 This might not match up exactly with your intuition: specifically, you might
 expect :math:`P \Rightarrow Q` to be false if :math:`P` is false. If this
-bothers you, try not to worry about it too much. We will later see that this it
-is convenient to define logical implication in this way.
+bothers you, try not to worry about it too much. We will later see that it is
+convenient to define logical implication in this way.
 
 **Exercise 1.5.** Persuade yourself, by using a truth table (or any other
 method that works for you), that :math:`P \Rightarrow Q` is always logically
