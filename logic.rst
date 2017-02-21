@@ -16,9 +16,10 @@ you are most likely familiar with already:
 * Similarly, you can also make a new statement :math:`P \text{ or } Q`, which is true
   if at least one of :math:`P` and :math:`Q` are true. This is often written as :math:`P \lor Q`.
 
-So for example, if we let the symbol :math:`P` represent the statement "the sky is
-blue", and let the symbol :math:`Q` represent the statement "pigs can fly", the
-statement :math:`P \lor Q` is true, because :math:`P` is true.
+So for example, if we let the symbol :math:`P` represent the statement "the sky
+is blue", and let the symbol :math:`Q` represent the statement "pigs can fly",
+the statement :math:`P \lor Q` is true, because at least one of them, in this
+case :math:`P`, is true.
 
 **Exercise 1.1.** Using the same assignment of the symbols :math:`P` and :math:`Q`, what is
 the truth-value of the statement :math:`P \land Q`?
