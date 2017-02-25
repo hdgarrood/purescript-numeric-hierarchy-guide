@@ -1,9 +1,10 @@
 Logic
 =====
 
-We will start with a quick discussion of logic. We will need this later on
-because we will want to prove statements concerning things like rings and
-fields.
+We will start with a short discussion of logic, in particular we will briefly
+cover some notation and a few proof techniques. We will need these later on to
+be able to make sense of statements concerning things like rings and fields,
+and also to prove or disprove these statements.
 
 You will probably be happy with the idea that statements such as "the sky is
 blue" and "pigs can fly" can have truth-values (i.e. "true" or "false"). There
@@ -174,6 +175,66 @@ In fact, the standard way of proving a statement of the form :math:`P
 \Leftrightarrow Q` is to first prove :math:`P \Rightarrow Q` and then to prove
 :math:`Q \Rightarrow P`.
 
+Sets
+----
+
+For our purposes, it will be sufficient to say a set is a collection of any
+kind of mathematical object: sets may contain numbers, functions, sets of
+numbers, and so on.
+
+We can write a set by listing the elements in between curly braces, like this:
+
+.. math::
+
+  \{1, 2, 3\}.
+
+Note that sets have no concept of ordering, so the set :math:`\{1, 3, 2\}` is
+the same as the set :math:`\{1, 2, 3\}`.
+
+The only thing we can really do with a set is to ask whether it contains some a
+particular thing. The notation for the statement ":math:`a` exists within the
+set :math:`A`" looks like this:
+
+.. math::
+  a \in A.
+
+We also have a notation for the negation of this statement, i.e. ":math:`a`
+does not exist within the set :math:`A`":
+
+.. math::
+  a \notin A.
+
+Often (but not always), uppercase letters denote sets, and lowercase letters
+denote elements of sets.
+
+Here are a few sets you may have come across already:
+
+* The set of *natural numbers,* :math:`\{0, 1, 2, 3, 4, ...\}`. That is, the
+  set of all the integers which are not negative. This set comes up fairly
+  often so we have a special notation for it: :math:`\mathbb{N}`. (Note:
+  depending on context, :math:`0` is sometimes not considered to be an element
+  of :math:`\mathbb{N}`; in this guide we will say that it is.)
+
+* The set of *integers,* :math:`\{0, 1, -1, 2, -2, 3, -3, ...\}`. Like
+  :math:`\mathbb{N}` but it also includes negative numbers. We have a special
+  notation for this set too: :math:`\mathbb{Z}`, from the German *Zahlen,*
+  meaning "numbers".
+
+* The set of *real numbers,* which is the kind of number you're probably most
+  used to. :math:`0, 1, 37, \frac{1}{2}`, and :math:`\pi` are all examples of
+  real numbers. This set also has a special notation: :math:`\mathbb{R}`.
+
+So for example, the following are all true:
+
+.. math::
+
+  6 \in \mathbb{N}
+
+  \frac{2}{3} \in \mathbb{R}
+
+
+  \frac{2}{3} \notin \mathbb{N}.
+
 Quantifiers
 -----------
 
@@ -196,24 +257,25 @@ called *quantifiers*.
 
 The first quantifier we will introduce is called "for all", written as an
 upside-down capital letter A like this: :math:`\forall`. Here is how we write the
-statement "the square of any number is greater than or equal to 0" using the
-:math:`\forall` quantifier:
-
-.. math::
-  
-   \forall x.\; x^2 \geq 0
-
-There are lots of various things that can be squared, so in this case it's
-preferable to be a bit more explicit about what values :math:`x` can take. In
-this case we want :math:`x` to be a *real number,* which is the kind of number
-you're probably most used to. :math:`0, 1, 37, \frac{1}{2}`, and :math:`\pi`
-are all examples of real numbers. The way we write ":math:`x` is a real number"
-in mathematical notation is ":math:`x \in \mathbb{R}`". The symbol :math:`\in`
-can be read "is an element of". A better way of writing the above is therefore:
+statement "the square of any real number is greater than or equal to 0" using
+the :math:`\forall` quantifier:
 
 .. math::
 
   \forall x \in \mathbb{R}.\; x^2 \geq 0
+
+This can be read as: "For all :math:`x` in :math:`\mathbb{R}`, :math:`x`
+squared is greater than or equal to :math:`0`."
+
+The standard way of proving a statement like this is more or less what you
+might expect: we have to show that every element of the set satisfies the
+predicate. If the set is finite, we can do this by checking each element
+individually. However, we often deal with infinite sets, and anyway individual
+checking quickly gets very tedious for even fairly small sets.  Therefore, we
+will usually prove statements of this kind by constructing an argument which
+deals with every single element of the set *at the same time.* In fact, we have
+already seen an example of such a proof: the proof that :math:`x` being even
+implies that :math:`x^2` is also even, from a moment ago.
 
 The other quantifier we will use is written as a back-to-front capital letter
 E, like this: :math:`\exists`, and can be read as "there exists". Here is how
@@ -228,9 +290,9 @@ There are two possible values of :math:`x` which you can use as examples to
 show that this statement is true: :math:`2` and :math:`-2`. In fact, the
 standard way of proving a statement of the form :math:`\exists x. P(x)` is to
 pick a specific value of :math:`x` and demonstrate that :math:`P(x)` is true
-for that :math:`x`.
+for that :math:`x` (again, as you might expect).
 
-**Exercise 1.6.** Prove the statement :math:`\exists x \in \mathbb{R}.\; 3x + 4
+**Exercise 1.8.** Prove the statement :math:`\exists x \in \mathbb{R}.\; 3x + 4
 = 13` by finding a suitable value for :math:`x`.
 
 The last thing we need to know in this section is how to negate statements that
@@ -246,7 +308,7 @@ two rules if you can; they will be useful later. Hopefully if you think about
 them for a bit you'll be able to persuade yourself intuitively why they are
 true.
 
-**Exercise 1.7.** Show that the statement :math:`\forall x \in \mathbb{R}.\;
+**Exercise 1.9.** Show that the statement :math:`\forall x \in \mathbb{R}.\;
 x < x^2` is false by finding a *counterexample* — that is, a value of
 :math:`x` such that :math:`x < x^2` does not hold. Do you see how we are using
 the first of the above two rules for negating statements with quantifiers here?
