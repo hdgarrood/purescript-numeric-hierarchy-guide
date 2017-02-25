@@ -10,26 +10,27 @@ blue" and "pigs can fly" can be assigned truth-values (i.e. "true" or "false").
 There are also ways of combining statements to make new statements, which again
 you are most likely familiar with already:
 
-* If you have two statements :math:`P` and :math:`Q`, you can make a new statement :math:`P
-  \text{ and } Q`, which is true if both :math:`P` and :math:`Q` are true. This is often
-  written as :math:`P \land Q`.
-* Similarly, you can also make a new statement :math:`P \text{ or } Q`, which is true
-  if at least one of :math:`P` and :math:`Q` are true. This is often written as :math:`P \lor Q`.
+* If you have two statements :math:`P` and :math:`Q`, you can make a new
+  statement :math:`P \text{ and } Q`, which is true if both :math:`P` and
+  :math:`Q` are true. This is often written as :math:`P \land Q`.
+* Similarly, you can also make a new statement :math:`P \text{ or } Q`, which
+  is true if at least one of :math:`P` and :math:`Q` are true. This is often
+  written as :math:`P \lor Q`.
 
 So for example, if we let the symbol :math:`P` represent the statement "the sky
 is blue", and let the symbol :math:`Q` represent the statement "pigs can fly",
 the statement :math:`P \lor Q` is true, because at least one of them, in this
 case :math:`P`, is true.
 
-**Exercise 1.1.** Using the same assignment of the symbols :math:`P` and :math:`Q`, what is
-the truth-value of the statement :math:`P \land Q`?
+**Exercise 1.1.** Using the same assignment of the symbols :math:`P` and
+:math:`Q`, what is the truth-value of the statement :math:`P \land Q`?
 
 Truth tables
 ------------
 
-We can describe the behaviour of logical operators like :math:`\land` and :math:`\lor`
-using things called *truth tables*. For example, here is the truth table for
-logical and (:math:`\land`):
+We can describe the behaviour of logical operators like :math:`\land` and
+:math:`\lor` using things called *truth tables*. For example, here is the truth
+table for logical and (:math:`\land`):
 
 ========= ========= =================
 :math:`P` :math:`Q` :math:`P \land Q`
@@ -193,8 +194,8 @@ standard way of proving a statement of the form :math:`\exists x. P(x)` is to
 pick a specific value of :math:`x` and demonstrate that :math:`P(x)` is true
 for that :math:`x`.
 
-**Exercise 1.6.** Prove the statement :math:`\exists x \in \mathbb{R}.\; 3x + 4 =
-13` by finding a suitable value for :math:`x`.
+**Exercise 1.6.** Prove the statement :math:`\exists x \in \mathbb{R}.\; 3x + 4
+= 13` by finding a suitable value for :math:`x`.
 
 The last thing we need to know in this section is how to negate statements that
 contain quantifiers. Here goes:
