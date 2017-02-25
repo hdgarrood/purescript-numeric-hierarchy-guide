@@ -84,14 +84,19 @@ which is true if the original statement is false, and false if the original
 statement is true. If :math:`P` is a statement, then the logical negation of
 :math:`P` is written as :math:`\neg P`.
 
-**Exercise 1.4.** Persuade yourself that :math:`\neg (P \lor Q)` is always
-logically equivalent to :math:`\neg P \land \neg Q`, regardless of the
-truth-values of :math:`P` and :math:`Q`. One way to do this is to write out a
-truth table.
+The following two equivalences hold regardless of the truth-values of :math:`P`
+and :math:`Q`:
 
-Similarly, :math:`\neg (P \land Q)` is always logically equivalent to
-:math:`\neg P \lor \neg Q`. These two equivalences are called *De Morgan's
-laws*.
+.. math::
+
+  \neg (P \lor Q) \; \Leftrightarrow \; \neg P \land \neg Q
+
+  \neg (P \land Q) \; \Leftrightarrow \; \neg P \lor \neg Q
+
+These two equivalences are called *De Morgan's laws.*
+
+**Exercise 1.4.** Persuade yourself that De Morgan's laws are correct.
+One way to do this is to write out a truth table.
 
 Logical implication
 -------------------
