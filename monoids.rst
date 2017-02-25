@@ -44,12 +44,12 @@ works on truth-values:
 Hopefully you can see the pattern by now. The general definition of a monoid is
 as follows:
 
-A monoid is a set :math:`X`, together with an operation :math:`*`, such that
+A monoid is a set :math:`M`, together with an operation :math:`*`, such that
 the following laws hold:
 
-1. *Closure.* :math:`\forall x, y \in X.\; x * y \in X`.
-2. *Associativity.* :math:`\forall x, y, z \in X.\; (x * y) * z = x * (y * z)`.
-3. *Identity.* :math:`\exists e \in X.\; \forall x \in X.\; e * x = x * e = x`.
+1. *Closure.* :math:`\forall x, y \in M.\; x * y \in M`.
+2. *Associativity.* :math:`\forall x, y, z \in M.\; (x * y) * z = x * (y * z)`.
+3. *Identity.* :math:`\exists e \in M.\; \forall x \in M.\; e * x = x * e = x`.
 
 Hopefully you can see that the operation :math:`*` corresponds to ``append`` in
 PureScript, and that the identity element (conventionally written :math:`e`)

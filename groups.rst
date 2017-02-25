@@ -1,13 +1,13 @@
 Groups
 ======
 
-Suppose we have some arbitrary monoid :math:`(X, *)`, and we are given two
-elements :math:`a, b \in X`, and we want to solve an equation of the form:
+Suppose we have some arbitrary monoid :math:`(M, *)`, and we are given two
+elements :math:`a, b \in M`, and we want to solve an equation of the form:
 
 .. math::
   a * x = b
 
-That is, we want to find some :math:`x \in X` such that the equation is
+That is, we want to find some :math:`x \in M` such that the equation is
 satisfied. Can we always do this?
 
 We will start by looking at some examples. First consider :math:`(\mathbb{Z},
@@ -33,9 +33,8 @@ following equation with this monoid?
   4 + x = 2
 
 We can't! If we were working with a set which contains negative numbers, we
-would be fine: in this case, the answer would be :math:`-2`. But :math:`-2` is
-not an element of :math:`\mathbb{N}` (the way we write this in
-mathematical notation is :math:`-2 \notin \mathbb{N}`).
+would be fine: in this case, the answer would be :math:`-2`. But :math:`-2
+\notin \mathbb{N}`.
 
 **Exercise 3.1.** Can you think of another example of a monoid and an equation
 involving that monoid which has no solutions? Hint: we discussed one possible
@@ -48,14 +47,19 @@ equation of this form can be solved. Our next task as mathematicians is to try
 to make this a bit more precise!
 
 We do this by defining a new algebraic structure called a *group*, which is a
-monoid with one extra requirement. Suppose we have a monoid :math:`(X, *)`. We
-say that :math:`(X, *)` is a group if and only if it satisfies this additional
+monoid with one extra requirement. Suppose we have a monoid :math:`(G, *)`. We
+say that :math:`(G, *)` is a group if and only if it satisfies this additional
 law:
 
-* *Inverses.* :math:`\forall x \in X.\; \exists y \in X.\; x * y = y * x = e`
+* *Inverses.* :math:`\forall g \in G.\; \exists h \in G.\; g * h = h * g = e`
 
 That is, every element has an inverse, and combining an element with its
 inverse gives you the identity.
+
+If you're wondering why I'm using different letters now, it's nothing more than
+a convention: people generally use :math:`G` to refer to some arbitrary group,
+and to use lowercase letters starting from :math:`g` to refer to elements of a
+group.
 
 :math:`(\mathbb{Z}, +)` is the first example of a group we will consider. In
 this group, the inverse of :math:`1` is :math:`-1`, the inverse of :math:`-5`
@@ -70,30 +74,30 @@ Uniqueness of inverses
 It turns out that in any group, every element has *exactly one* inverse. We can
 prove this:
 
-Let :math:`(X, *)` be a group, and let :math:`x \in X`. Suppose we have two
-additional elements, :math:`y, z \in X`, such that :math:`y` and :math:`z` are
-both inverses of :math:`x`.
+Let :math:`(G, *)` be a group, and let :math:`g \in G`. Suppose we have two
+additional elements, :math:`h_1, h_2 \in G`, such that :math:`h_1` and
+:math:`h_2` are both inverses of :math:`g`.
 
 Then:
 
-1. :math:`y` is equal to :math:`y * e`, since :math:`e` is the identity
+1. :math:`h_1` is equal to :math:`h_1 * e`, since :math:`e` is the identity
    element.
-2. :math:`y * e` is in turn equal to :math:`y * (x * z)`: since :math:`x` and
-   :math:`z` are inverses, we can replace :math:`e` with :math:`x * z`.
-3. :math:`y * (x * z)` is equal to :math:`(y * x) * z` by the associativity
-   law.
-4. :math:`(y * x) * z` is equal to :math:`e * z` since :math:`x` and :math:`y`
-   are inverses.
-5. :math:`e * z` is just :math:`z`.
+2. :math:`h_1 * e` is in turn equal to :math:`h_1 * (g * h_2)`: since :math:`g`
+   and :math:`h_2` are inverses, we can replace :math:`e` with :math:`g * h_2`.
+3. :math:`h_1 * (g * h_2)` is equal to :math:`(h_1 * g) * h_2` by the
+   associativity law.
+4. :math:`(h_1 * g) * h_2` is equal to :math:`e * h_2` since :math:`g` and
+   :math:`h_1` are inverses.
+5. :math:`e * h_2` is just :math:`h_2`.
 
-So :math:`y = z`, and therefore we have shown that any element has exactly one
-inverse.
+So :math:`h_1 = h_2`, and therefore we have shown that any element has exactly
+one inverse.
 
 Because elements always have exactly one inverse, we can talk about *the*
 inverse of an element, as opposed to just *an* inverse of an element. Also,
-we can define a notation for the inverse of an element: If :math:`x \in X` and
-:math:`(X, *)` is a group, then we often write the inverse of :math:`x` as
-:math:`x^{-1}`. Be a little bit careful here: this isn't always the same as the
+we can define a notation for the inverse of an element: if :math:`g` is some
+element of a group, then we often write the inverse of :math:`g` as
+:math:`g^{-1}`. Be a little bit careful here: this isn't always the same as the
 exponentiation you might have seen before. It depends on the group we're
 talking about. For example, we saw that in :math:`(\mathbb{Z}, +)`,
 we find the inverse of an element by multiplying it by :math:`-1`.
@@ -116,15 +120,15 @@ We can now cancel:
 .. math::
   x = a^{-1} * b
 
-And we have solved for :math:`x`. So, if :math:`X` is a group, then an equation
-of the form :math:`a * x = b` always has exactly one solution. *Cancellation* —
-the ability to move elements to the other side of equations like this — is
-arguably a defining property of groups.
+And we have solved for :math:`x`. So, if we are dealing with a group, then an
+equation of the form :math:`a * x = b` always has exactly one solution.
+*Cancellation* — the ability to move elements to the other side of equations
+like this — is arguably a defining property of groups.
 
-Groups might seem like a very simple concept but they give rise to an
-astonishing amount of rather lovely mathematics. I don't want to dwell on them
-too much here, because we want to get on to rings and fields and things, but
-I recommend studying them in more depth if you get the chance.
+Groups might seem like a simple concept but they give rise to an astonishing
+amount of rather lovely mathematics. I don't want to dwell on them too much
+here, because we want to get on to rings and fields and things, but I recommend
+studying them in more depth if you get the chance.
 
 In my experience, it's fairly uncommon to want a Group type class in PureScript
 code, but if you do ever happen to want one, it's in the `purescript-group
