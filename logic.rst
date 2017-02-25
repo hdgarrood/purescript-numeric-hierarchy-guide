@@ -125,6 +125,37 @@ method that works for you), that :math:`P \Rightarrow Q` is always logically
 equivalent to :math:`\neg P \lor Q` regardless of the truth-values of :math:`P`
 and :math:`Q`.
 
+The standard way of proving a statement of the form :math:`P \Rightarrow Q` is
+to first assume that :math:`P` is true, and then show that :math:`Q` follows,
+i.e. show that :math:`Q` must also be true.
+
+For example, suppose we wanted to prove the statement
+
+.. math::
+
+  x \text{ is even} \Rightarrow x^2 \text{ is even}.
+  
+We would start by letting :math:`x` be some arbitrary integer and assuming that
+it is even. Since :math:`x` is even, we can write :math:`x = 2m` for some
+integer :math:`m`. Then, :math:`x^2 = 4m^2` and therefore we have shown
+:math:`x^2` has :math:`4` as a factor, so it must also have :math:`2` as a
+factor, which means it must be even.
+
+**Exercise 1.6.** Persuade yourself that :math:`P
+\Rightarrow Q` is always logically equivalent to :math:`\neg Q \Rightarrow \neg
+P`.
+
+This exercise suggests another way of proving statements of the form :math:`P
+\Rightarrow Q`, which is to instead assume that :math:`\neg Q` is true, and
+show that :math:`\neg P` follows. This technique is called *contraposition;*
+the new statement is called the *contrapositive* of the original one.
+
+**Exercise 1.7.** Use contraposition to prove the statement
+
+.. math::
+
+  x^2 \text{ is odd} \Rightarrow x \text{ is odd}.
+
 Another way of thinking of logical equivalence is in terms of logical
 implication. Specifically, an alternative way of defining
 :math:`\Leftrightarrow` is by saying that :math:`P \Leftrightarrow Q` is the
