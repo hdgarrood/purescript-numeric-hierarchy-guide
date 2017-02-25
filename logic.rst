@@ -6,9 +6,9 @@ because we will want to prove statements concerning things like rings and
 fields.
 
 You will probably be happy with the idea that statements such as "the sky is
-blue" and "pigs can fly" can be assigned truth-values (i.e. "true" or "false").
-There are also ways of combining statements to make new statements, which again
-you are most likely familiar with already:
+blue" and "pigs can fly" can have truth-values (i.e. "true" or "false"). There
+are also ways of combining statements to make new statements, which again you
+are most likely familiar with already:
 
 * If you have two statements :math:`P` and :math:`Q`, you can make a new
   statement :math:`P \text{ and } Q`, which is true if both :math:`P` and
