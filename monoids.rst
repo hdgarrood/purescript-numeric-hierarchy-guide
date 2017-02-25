@@ -58,8 +58,7 @@ corresponds to ``mempty`` in PureScript.
 A brief interlude on mathematical notation: if we want to refer to a specific
 monoid, we write it as a pair where the first element is the set and the second
 is the operation. For example, the monoid of integers under addition is written
-as :math:`(\mathbb{Z}, +)`. The set of integers is written :math:`\mathbb{Z}` —
-this comes from the German *Zahlen,* meaning "numbers".
+as :math:`(\mathbb{Z}, +)`.
 
 **Exercise 2.1.** The set of all the non-negative integers is called the set of
 *natural numbers*, and is written :math:`\mathbb{N}`. Consider this set
