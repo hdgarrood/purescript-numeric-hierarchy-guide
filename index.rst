@@ -12,3 +12,4 @@ Table of contents
    monoids
    groups
 
+   appendix/index

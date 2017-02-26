@@ -90,9 +90,9 @@ and :math:`Q`:
 
 .. math::
 
-  \neg (P \lor Q) \; \Leftrightarrow \; \neg P \land \neg Q
-
   \neg (P \land Q) \; \Leftrightarrow \; \neg P \lor \neg Q
+
+  \neg (P \lor Q) \; \Leftrightarrow \; \neg P \land \neg Q
 
 These two equivalences are called *De Morgan's laws.*
 
