@@ -97,18 +97,21 @@ Show that :math:`(\mathbb{Q}, +)` is a monoid by checking each of the three
 laws. What is the identity element?
 
 **Exercise 2.3.** (Harder) Prove that a monoid can only have one identity
-element. Some hints:
+element. To do this, first suppose that you have two elements of some monoid;
+call them, say, :math:`e` and :math:`e'`, and then show that if they are both
+identity elements then they must be equal to each other. Be careful here: it's
+not enough to take one specific example of a monoid and show that it only has
+one identity element. You have to construct an argument which will work for
+*any* monoid, which means you aren't allowed to assume anything beyond what is
+in the definition of a monoid.
 
-* Imagine a monoid which has two distinct identity elements, and consider what
-  happens if you combine them with the monoid operation.
-* Be careful here: it's not enough to take one specific example of a monoid and
-  show that it only has one identity element. You have to construct an argument
-  which will work for *any* monoid, which means you aren't allowed to assume
-  anything beyond what is in the definition of a monoid.
-* One method of proof which you might find useful here is *proof by
-  contradiction*. To prove that a statement is true by contradiction, we start
-  by supposing that it is false and then show that this leads to a
-  contradiction.
+A quick note on the previous exercise: in general, if we want to prove that
+there is a unique element of some set which has some particular property, we do
+this by taking two arbitrary elements of the set, assuming that they both have
+this property, and then showing that they must be equal.
+
+Since monoids have a unique identity element, we can talk about *the* identity
+element of a monoid, rather than just *an* identity element.
 
 One more slightly strange example: Consider a set :math:`X`, which contains
 precisely one element, :math:`x`. We can define an operation :math:`*` on this

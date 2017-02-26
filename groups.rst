@@ -93,14 +93,15 @@ Then:
 So :math:`h_1 = h_2`, and therefore we have shown that any element has exactly
 one inverse.
 
-Because elements always have exactly one inverse, we can talk about *the*
-inverse of an element, as opposed to just *an* inverse of an element. Also,
-we can define a notation for the inverse of an element: if :math:`g` is some
-element of a group, then we often write the inverse of :math:`g` as
-:math:`g^{-1}`. Be a little bit careful here: this isn't always the same as the
-exponentiation you might have seen before. It depends on the group we're
-talking about. For example, we saw that in :math:`(\mathbb{Z}, +)`,
-we find the inverse of an element by multiplying it by :math:`-1`.
+Because elements of a group always have exactly one inverse, we can talk about
+*the* inverse of an element, as opposed to just *an* inverse of an element
+(just like with identity elements of monoids). Also, we can define a notation
+for the inverse of an element: if :math:`g` is some element of a group, then we
+often write the inverse of :math:`g` as :math:`g^{-1}`. Be a little bit careful
+here: this isn't always the same as the exponentiation you might have seen
+before. It depends on the group we're talking about. For example, we saw that
+in :math:`(\mathbb{Z}, +)`, we find the inverse of an element by multiplying it
+by :math:`-1`.
 
 **Exercise 3.2.** In an arbitrary group, what is the inverse of the identity element?
 
