@@ -1,8 +1,26 @@
 # purescript-numeric-hierarchy-guide
 
-Sources for <http://purescript-numeric-hierarchy.harry.garrood.me/>.
+Sources for <https://a-guide-to-the-purescript-numeric-hierarchy.readthedocs.io/en/latest/>.
 
-Compiled using Sphinx. I have been developing on Ubuntu using the default version from the Ubuntu repositories; install like this:
+## Status
+
+This guide is currently in a pre-alpha stage. In particular, it is very
+incomplete. If you would like to provide feedback at this stage I'd be very
+grateful to receive it.
+
+Please don't start sharing links to this publicly yet, though; I'd prefer to
+wait until it's more complete.
+
+If you read through an earlier version of this guide and want to see what has
+changed in the meantime, GitHub has a [compare
+view](https://help.github.com/articles/comparing-commits-across-time/) which
+you can use. For example, [this page compares what's in `master` now with what
+`master` looked like 2 days ago](https://github.com/hdgarrood/purescript-numeric-hierarchy-guide/compare/master@%7B2day%7D...master).
+
+## Working on this locally
+
+Compiled using Sphinx. I have been developing on Ubuntu using the default
+version from the Ubuntu repositories; install like this:
 
 ```
 $ sudo apt install python3-sphinx
