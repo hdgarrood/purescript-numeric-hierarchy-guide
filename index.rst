@@ -11,5 +11,6 @@ Table of contents
    logic
    monoids
    groups
+   matrices
 
    appendix/index

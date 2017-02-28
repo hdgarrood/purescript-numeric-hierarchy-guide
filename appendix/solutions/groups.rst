@@ -1,5 +1,5 @@
 Groups
-=====
+======
 
 .. toctree::
   groups/ex1
