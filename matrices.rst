@@ -123,9 +123,6 @@ properties. Let :math:`f` be a function from :math:`\mathbb{R}^3` to
 
   f(k \boldsymbol{x}) = k f(\boldsymbol{x})
 
-**Exercise 4.4.** Prove this, using previously given properties of the dot
-product.
-
 That is, if we have a pair of vectors and a function :math:`f` defined as
 above, we can add the vectors together and then apply :math:`f`, or we can
 apply :math:`f` to each of the vectors individually and then add the results
@@ -133,6 +130,9 @@ together, but in both cases we will always get the same result. Similarly if we
 have a vector and a scalar, we can multiply the vector by the scalar and then
 apply :math:`f`, or apply :math:`f` to the vector first and then do the scalar
 multiplication on the result, but either way the we end up with the same vector.
+
+**Exercise 4.4.** Prove this, using previously given properties of the dot
+product.
 
 Functions of this kind are important enough that we have a name for them:
 *linear mappings*.
