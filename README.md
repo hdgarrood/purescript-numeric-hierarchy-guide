@@ -11,11 +11,15 @@ grateful to receive it.
 Please don't start sharing links to this publicly yet, though; I'd prefer to
 wait until it's more complete.
 
+ReadTheDocs builds the HTML from what's in the `published` branch; the `master`
+branch will often be slightly ahead of `published`, containing material that
+I feel is not quite ready to be published yet.
+
 If you read through an earlier version of this guide and want to see what has
 changed in the meantime, GitHub has a [compare
 view](https://help.github.com/articles/comparing-commits-across-time/) which
-you can use. For example, [this page compares what's in `master` now with what
-`master` looked like 2 days ago](https://github.com/hdgarrood/purescript-numeric-hierarchy-guide/compare/master@%7B2day%7D...master).
+you can use. For example, [this page compares what's in the `published` branch now with what
+`published` looked like 2 days ago](https://github.com/hdgarrood/purescript-numeric-hierarchy-guide/compare/published@%7B2day%7D...published).
 
 ## Working on this locally
 
