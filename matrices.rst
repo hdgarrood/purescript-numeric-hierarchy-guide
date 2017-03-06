@@ -123,10 +123,6 @@ of :math:`\boldsymbol{a_1}` with the parameter :math:`\boldsymbol{x}`, and the
 second component is the dot product of :math:`\boldsymbol{a_2}` with
 :math:`\boldsymbol{x}`.
 
-On notation: the arrow (:math:`\mapsto`) can be read "maps to". The
-mathematical notation :math:`x \mapsto x + 4` means essentially the same thing
-as the PureScript code ``\x -> x + 4``, that is, it denotes a function.
-
 For example, let us take the following vectors for :math:`\boldsymbol{a_1}` and
 :math:`\boldsymbol{a_2}`:
 

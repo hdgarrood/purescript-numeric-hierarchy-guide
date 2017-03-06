@@ -168,7 +168,7 @@ If this notation isn't clear to you, here's the PureScript equivalent::
 
   e :: X -> X
   e x = x
-    -- or simply e = identity
+    -- or simply e = id
 
   f1 :: X -> X
   f1 _ = A
@@ -203,13 +203,17 @@ set. Define an operation :math:`\star` on the set :math:`\mathrm{Maps}(X, M)` â€
 that is, the set of functions from :math:`X` to :math:`M` â€” as follows:
 
 .. math::
-  (f \star g)(x) = f(x) * g(x)
+  f \star g = x \mapsto f(x) * g(x)
+
+On notation: the arrow (:math:`\mapsto`) can be read "maps to". The
+mathematical notation :math:`x \mapsto x + 4` means essentially the same thing
+as the PureScript code ``\x -> x + 4``, that is, it denotes a function.
 
 That is, the star product :math:`\star` of two functions :math:`f` and
 :math:`g` is a new function which applies both :math:`f` and :math:`g` to its
 argument, and then combines the results using the monoid operation :math:`*`
-from the monoid :math:`M`.  Prove that this is a monoid; what is the identity
-element?
+from the monoid :math:`M`.  Prove that :math:`(\mathrm{Maps}(X, M), \star)` is
+a monoid; what is the identity element?
 
 The monoid in this exercise is *also* implemented in PureScript in the
 ``purescript-monoid`` library; in fact it is the default ``Monoid`` instance
