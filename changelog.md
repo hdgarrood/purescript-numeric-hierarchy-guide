@@ -12,7 +12,7 @@
   * Added example: the monoid given by functions on some set with composition
   * Added example: the monoid given by functions from some set to some monoid
 * Groups chapter:
-  * Added examples: trivial group, (Q, +), (R, +)
+  * Added examples: trivial group, (ℚ, +), (ℝ, +)
   * New subsection about modular arithmetic and how integers modulo m form a
     group
   * New subsection about permutations and how they form a group
