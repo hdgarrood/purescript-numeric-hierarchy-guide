@@ -83,7 +83,9 @@ an identity element.
 A brief interlude on notation: if we want to refer to a specific monoid, we
 write it as a pair where the first element is the set and the second is the
 operation. For example, the monoid of integers under addition is written as
-:math:`(\mathbb{Z}, +)`.
+:math:`(\mathbb{Z}, +)`. If it is clear from context which operation we are
+talking about, we often omit the operation and just write the set, e.g. we
+might simply say :math:`\mathbb{Z}` is a monoid.
 
 **Exercise 2.1.** Consider the set of natural numbers together with the
 operation of subtraction: :math:`(\mathbb{N}, -)`. This is *not* a monoid. Can
@@ -119,30 +121,30 @@ element of a monoid, rather than just *an* identity element.
 Some more examples
 ------------------
 
-Consider a set :math:`X`, which contains precisely one element, :math:`x`. We
-can define an operation :math:`*` on this set as follows:
+Consider the set :math:`\{e\}`, which contains precisely one element,
+:math:`e`. We can define an operation :math:`*` on this set as follows:
 
 .. math::
 
-  x * x = x
+  e * e = e
 
 That's all we need to do to define :math:`*`, because there are no other
-possible values to consider. Then, :math:`(X, *)` is a monoid. It's not very
+possible values to consider. Then, :math:`\{e\}` is a monoid. It's not very
 interesting which is why it gets called the *trivial monoid*. This corresponds
 exactly to the ``Unit`` type in PureScript; the ``Unit`` type has precisely
 this ``Monoid`` instance too.
 
-Now, let :math:`X` be any set, and consider the set of functions from :math:`X`
-to :math:`X`, which we denote by :math:`\mathrm{Maps}(X, X)`. If we take
-function composition :math:`\circ` as our operation, we have a monoid
+Let :math:`X` be any set, and consider the set of functions from :math:`X` to
+:math:`X`, which we denote by :math:`\mathrm{Maps}(X, X)`. If we take function
+composition :math:`\circ` as our operation, we have a monoid
 :math:`(\mathrm{Maps}(X, X), \circ)`.  Let's check this:
 
 1. *Closure.* The composition of two functions from :math:`X` to :math:`X` is
    itself a function from :math:`X` to :math:`X`, so closure is satisfied.
 2. *Associativity.* Function composition is associative, so associativity is
    satisfied.
-3. *Identity.* The identity function :math:`\iota : X \rightarrow X` defined by
-   :math:`\iota(x) = x` for all :math:`x \in X` is the identity element with
+3. *Identity.* The identity function :math:`e : X \rightarrow X` defined by
+   :math:`e(x) = x` for all :math:`x \in X` is the identity element with
    respect to function composition, so identity is satisfied.
 
 This may seem a bit abstract, so here's a concrete example. We will take the
@@ -151,7 +153,7 @@ set :math:`X` to be the set :math:`\{A, B\}` which contains just two elements.
 just symbols.) Then there are four functions from :math:`X` to :math:`X`:
 
 .. math::
-  \iota(x) = x
+  e(x) = x
 
   f_1(x) = A
 
@@ -164,9 +166,9 @@ just symbols.) Then there are four functions from :math:`X` to :math:`X`:
 
 If this notation isn't clear to you, here's the PureScript equivalent::
 
-  i :: X -> X
-  i x = x
-    -- or simply i = identity
+  e :: X -> X
+  e x = x
+    -- or simply e = identity
 
   f1 :: X -> X
   f1 _ = A
@@ -187,7 +189,7 @@ Here are a few examples of how the monoid operation works in this monoid:
 
   f_2 \circ f_3 = f_2
 
-  f_3 \circ f_3 = \iota
+  f_3 \circ f_3 = e
 
 (check that you agree).
 
