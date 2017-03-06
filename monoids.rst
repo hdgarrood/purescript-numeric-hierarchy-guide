@@ -96,6 +96,9 @@ short-hand notation for this set too: :math:`\mathbb{Q}` (for "quotient").
 Show that :math:`(\mathbb{Q}, +)` is a monoid by checking each of the three
 laws. What is the identity element?
 
+Uniqueness of identity elements
+-------------------------------
+
 **Exercise 2.3.** (Harder) Prove that a monoid can only have one identity
 element. To do this, first suppose that you have two elements of some monoid;
 call them, say, :math:`e` and :math:`e'`, and then show that if they are both
@@ -113,9 +116,11 @@ this property, and then showing that they must be equal.
 Since monoids have a unique identity element, we can talk about *the* identity
 element of a monoid, rather than just *an* identity element.
 
-One more slightly strange example: Consider a set :math:`X`, which contains
-precisely one element, :math:`x`. We can define an operation :math:`*` on this
-set as follows:
+Some more examples
+------------------
+
+Consider a set :math:`X`, which contains precisely one element, :math:`x`. We
+can define an operation :math:`*` on this set as follows:
 
 .. math::
 
@@ -126,3 +131,84 @@ possible values to consider. Then, :math:`(X, *)` is a monoid. It's not very
 interesting which is why it gets called the *trivial monoid*. This corresponds
 exactly to the ``Unit`` type in PureScript; the ``Unit`` type has precisely
 this ``Monoid`` instance too.
+
+Now, let :math:`X` be any set, and consider the set of functions from :math:`X`
+to :math:`X`, which we denote by :math:`\mathrm{Maps}(X, X)`. If we take
+function composition :math:`\circ` as our operation, we have a monoid
+:math:`(\mathrm{Maps}(X, X), \circ)`.  Let's check this:
+
+1. *Closure.* The composition of two functions from :math:`X` to :math:`X` is
+   itself a function from :math:`X` to :math:`X`, so closure is satisfied.
+2. *Associativity.* Function composition is associative, so associativity is
+   satisfied.
+3. *Identity.* The identity function :math:`\iota : X \rightarrow X` defined by
+   :math:`\iota(x) = x` for all :math:`x \in X` is the identity element with
+   respect to function composition, so identity is satisfied.
+
+This may seem a bit abstract, so here's a concrete example. We will take the
+set :math:`X` to be the set :math:`\{A, B\}` which contains just two elements.
+(The elements :math:`A` and :math:`B` don't really mean anything here, they're
+just symbols.) Then there are four functions from :math:`X` to :math:`X`:
+
+.. math::
+  \iota(x) = x
+
+  f_1(x) = A
+
+  f_2(x) = B
+
+  f_3(x) = \begin{cases}
+              B & \mathrm{if}\; x = A \\
+              A & \mathrm{if}\; x = B
+           \end{cases}
+
+If this notation isn't clear to you, here's the PureScript equivalent::
+
+  i :: X -> X
+  i x = x
+    -- or simply i = identity
+
+  f1 :: X -> X
+  f1 _ = A
+    -- or simply f1 = const A
+
+  f2 :: X -> X
+  f2 _ = B
+    -- or simply f2 = const B
+
+  f3 :: X -> X
+  f3 A = B
+  f3 B = A
+
+Here are a few examples of how the monoid operation works in this monoid:
+
+.. math::
+  f_1 \circ f_2 = f_1
+
+  f_2 \circ f_3 = f_2
+
+  f_3 \circ f_3 = \iota
+
+(check that you agree).
+
+This monoid is implemented in PureScript in the ``purescript-monoid`` library,
+via the ``Endo`` newtype.
+
+We now move on to the last example of a monoid in this chapter:
+
+**Exercise 2.4.** Let :math:`(M, *)` be any monoid, and let :math:`X` be any
+set. Define an operation :math:`\star` on the set :math:`\mathrm{Maps}(X, M)` —
+that is, the set of functions from :math:`X` to :math:`M` — as follows:
+
+.. math::
+  (f \star g)(x) = f(x) * g(x)
+
+That is, the star product :math:`\star` of two functions :math:`f` and
+:math:`g` is a new function which applies both :math:`f` and :math:`g` to its
+argument, and then combines the results using the monoid operation :math:`*`
+from the monoid :math:`M`.  Prove that this is a monoid; what is the identity
+element?
+
+The monoid in this exercise is *also* implemented in PureScript in the
+``purescript-monoid`` library; in fact it is the default ``Monoid`` instance
+for functions, written as ``Monoid b => Monoid (a -> b)``.
