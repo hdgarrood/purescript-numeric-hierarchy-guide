@@ -256,7 +256,7 @@ can't always find a :math:`g \in \mathrm{Maps}(X, X)` such that :math:`f \circ
 g = g \circ f = e`. For example, suppose that we take :math:`X = \{A, B\}` as
 before. We defined a function :math:`f_1` in the previous chapter which sends
 both :math:`A` and :math:`B` to :math:`A`. To invert :math:`f_1`, we need to
-come up with a rule, so that if we are given any element :math:`y \in X`, we
+come up with a rule, so that if we are given any element :math:`y \in Y`, we
 can find the unique element :math:`x \in X` satisfying :math:`f_1(x) = y`. That
 is, given the result of applying :math:`f_1` to something, we have to be able
 to find that thing.
