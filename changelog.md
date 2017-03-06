@@ -6,6 +6,7 @@
 * Logic chapter:
   * Explain how to prove logical implications and statements with "for all"
     quantifiers.
+  * Talk more about sets and set notation.
 * Monoids chapter:
   * Add some non-examples of monoids and why they fail to be monoids
   * Added example: the monoid given by functions on some set with composition
