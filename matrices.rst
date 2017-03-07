@@ -131,7 +131,7 @@ Here is one example of a linear mapping:
 
 .. math::
   f(\begin{bmatrix}x_1\\x_2\end{bmatrix}) =
-    \begin{bmatrix} 2x_1 + 3x \\ x_1 - 2x_2 \end{bmatrix}
+    \begin{bmatrix} 2x_1 + 3x_2 \\ x_1 - 2x_2 \end{bmatrix}
 
 Try choosing a couple of vectors in :math:`\mathbb{R}^2` and checking that the
 linear mapping laws are satisfied with those vectors.
@@ -142,22 +142,22 @@ Here is an example of a function which fails to be a linear mapping:
   f(\begin{bmatrix}x_1\\x_2\end{bmatrix}) =
     \begin{bmatrix} x_1^2 \\ x_2 \end{bmatrix}
 
-For example, if we take :math:`\boldsymbol{x} = (2, 0)` and :math:`k = 2`, then
+For example, if we take :math:`\boldsymbol{x} = (2, 0)` and :math:`k = 3`, then
 
 .. math::
   f(k \boldsymbol{x}) =
-    f(2 \begin{bmatrix}2\\0\end{bmatrix}) =
-    f(\begin{bmatrix}4\\0\end{bmatrix}) =
-    \begin{bmatrix}16\\0\end{bmatrix}
+    f(3 \begin{bmatrix}2\\0\end{bmatrix}) =
+    f(\begin{bmatrix}6\\0\end{bmatrix}) =
+    \begin{bmatrix}36\\0\end{bmatrix}
 
 However, if we apply the function first and then do the scalar multiplication,
 we get a different result:
 
 .. math::
   k f(\boldsymbol{x}) =
-    2 f(\begin{bmatrix}2\\0\end{bmatrix}) =
-    2 \begin{bmatrix}4\\0\end{bmatrix} =
-    \begin{bmatrix}8\\0\end{bmatrix}
+    3 f(\begin{bmatrix}2\\0\end{bmatrix}) =
+    3 \begin{bmatrix}4\\0\end{bmatrix} =
+    \begin{bmatrix}12\\0\end{bmatrix}
 
 Describing linear mappings with dot products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -284,16 +284,19 @@ operation corresponds to *application* of the linear mapping to the vector:
       4 & -2
   \end{bmatrix}
   \begin{bmatrix} 1 \\ 1 \end{bmatrix} =
+  \begin{bmatrix} (1 \times 1) + (0 \times 1) \\ (4 \times 1) + (-2 \times 1) \end{bmatrix} =
   \begin{bmatrix} 1 \\ 2 \end{bmatrix}
 
-So we have just seen that every matrix represents a linear mapping. It turns
-out that every linear mapping can be represented by a matrix, which means that
-linear mappings and matrices are in one-to-one correspondence. This is very
-useful: if we are asked a question about linear mappings which is difficult to
-answer, we can translate it into an equivalent question about matrices (and
-vice versa) because of this correspondence. Sometimes, simply by translating a
-question about linear mappings to one about matrices, we can make the answer
-immediately obvious, even for questions which originally seemed very difficult.
+We learned a moment ago that linear mappings can always be defined in terms of
+dot products, and also that functions defined in terms of dot products are
+linear mappings. Since a matrix is just another way of writing the vectors
+:math:`\boldsymbol{a_1}` and :math:`\boldsymbol{a_2}`, matrices and linear
+mappings are in one-to-one correspondence. This is very useful: if we are asked
+a question about linear mappings which is difficult to answer, we can translate
+it into an equivalent question about matrices (and vice versa) because of this
+correspondence.  Sometimes, simply by translating a question about linear
+mappings to one about matrices, we can make the answer immediately obvious,
+even for questions which originally seemed very difficult.
 
 We can generalise the operation of multiplying a matrix by a vector to allow us
 to multiply matrices by other matrices. We do this by splitting the matrix on
@@ -441,3 +444,8 @@ but the other way gives us
     0 & 1 \\
     0 & 1
   \end{bmatrix}.
+
+Since matrices correspond to linear mappings, we can also conclude that linear
+mappings form a noncommutative ring where the multiplication operation is
+function composition. What will the addition operation be? (Hint: it's the
+linear mapping analogue of matrix addition.)
