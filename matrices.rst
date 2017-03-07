@@ -99,12 +99,68 @@ We sometimes need to be a bit careful about keeping track of which operations
 are which; in particular, note that in the first equation, we have *vector*
 addition on the left hand side, but *scalar* addition on the right.
 
-**Exercise 5.4.** Prove these two identities. Hint: we already know that
-multiplication distributes over addition in :math:`\mathbb{R}`; that is,
-:math:`\forall x, y, z \in \mathbb{R}.\; x(y + z) = xy + xz`.
+**Exercise 5.4.** Prove these two identities regarding dot products. Hint: we
+already know that multiplication distributes over addition in
+:math:`\mathbb{R}`; that is, :math:`\forall x, y, z \in \mathbb{R}.\; x(y + z)
+= xy + xz`.
 
 Linear mappings
 ---------------
+
+Let :math:`f` be a function from :math:`\mathbb{R}^2` to :math:`\mathbb{R}^2`,
+such that the following two laws are satisfied for all :math:`\boldsymbol{x},
+\boldsymbol{y} \in \mathbb{R}^2, k \in \mathbb{R}`:
+
+.. math::
+  f(\boldsymbol{x} + \boldsymbol{y}) = f(\boldsymbol{x}) + f(\boldsymbol{y})
+
+  f(k \boldsymbol{x}) = k f(\boldsymbol{x})
+
+That is, if we have a pair of vectors and a function :math:`f` defined as
+above, we can add the vectors together and then apply :math:`f`, or we can
+apply :math:`f` to each of the vectors individually and then add the results
+together, but in both cases we will always get the same result. Similarly if we
+have a vector and a scalar, we can multiply the vector by the scalar and then
+apply :math:`f`, or apply :math:`f` to the vector first and then do the scalar
+multiplication on the result, but either way the we end up with the same vector.
+
+Functions of this kind are important enough that we have a name for them:
+*linear mappings*.
+
+Here is one example of a linear mapping:
+
+.. math::
+  f(\begin{bmatrix}x_1\\x_2\end{bmatrix}) =
+    \begin{bmatrix} 2x_1 + 3x \\ x_1 - 2x_2 \end{bmatrix}
+
+Try choosing a couple of vectors in :math:`\mathbb{R}^2` and checking that the
+linear mapping laws are satisfied with those vectors.
+
+Here is an example of a function which fails to be a linear mapping:
+
+.. math::
+  f(\begin{bmatrix}x_1\\x_2\end{bmatrix}) =
+    \begin{bmatrix} x_1^2 \\ x_2 \end{bmatrix}
+
+For example, if we take :math:`\boldsymbol{x} = (2, 0)` and :math:`k = 2`, then
+
+.. math::
+  f(k \boldsymbol{x}) =
+    f(2 \begin{bmatrix}2\\0\end{bmatrix}) =
+    f(\begin{bmatrix}4\\0\end{bmatrix}) =
+    \begin{bmatrix}16\\0\end{bmatrix}
+
+However, if we apply the function first and then do the scalar multiplication,
+we get a different result:
+
+.. math::
+  k f(\boldsymbol{x}) =
+    2 f(\begin{bmatrix}2\\0\end{bmatrix}) =
+    2 \begin{bmatrix}4\\0\end{bmatrix} =
+    \begin{bmatrix}8\\0\end{bmatrix}
+
+Describing linear mappings with dot products
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now, suppose we have 2 vectors :math:`\boldsymbol{a_1}, \boldsymbol{a_2}, \in
 \mathbb{R}^2`. We can use these to define a function which maps vectors in
@@ -147,29 +203,14 @@ We can now define a function using them:
 This particular function takes :math:`(1,1)` to :math:`(1,2)`, and it takes
 :math:`(2,0)` to :math:`(2, 8)` — check this!
 
-These functions have some useful and interesting properties. Let :math:`f` be a
-function from :math:`\mathbb{R}^2` to :math:`\mathbb{R}^2` defined in this way.
-Then, the following are true for all :math:`\boldsymbol{x}, \boldsymbol{y} \in
-\mathbb{R}^2, k \in \mathbb{R}`:
+It turns out that functions which can be defined in terms of dot products like
+this are precisely linear mappings — that is, if you define a function in terms
+of dot products in this way, it will always be a linear mapping, and
+conversely, any linear mapping can be described in terms of dot products like
+we have just done here.
 
-.. math::
-  f(\boldsymbol{x} + \boldsymbol{y}) = f(\boldsymbol{x}) + f(\boldsymbol{y})
-
-  f(k \boldsymbol{x}) = k f(\boldsymbol{x})
-
-That is, if we have a pair of vectors and a function :math:`f` defined as
-above, we can add the vectors together and then apply :math:`f`, or we can
-apply :math:`f` to each of the vectors individually and then add the results
-together, but in both cases we will always get the same result. Similarly if we
-have a vector and a scalar, we can multiply the vector by the scalar and then
-apply :math:`f`, or apply :math:`f` to the vector first and then do the scalar
-multiplication on the result, but either way the we end up with the same vector.
-
-**Exercise 5.5.** Prove this, using previously given properties of the dot
-product.
-
-Functions of this kind are important enough that we have a name for them:
-*linear mappings*.
+**Exercise 5.5.** Show that any function defined in terms of dot products will
+be a linear mapping, using previously given properties of the dot product.
 
 **Exercise 5.6.** Show that the composition of two linear mappings is itself
 a linear mapping. That is, if :math:`f` and :math:`g` are linear mappings, then
