@@ -7,3 +7,4 @@ Matrices
   matrices/ex3
   matrices/ex4
   matrices/ex5
+  matrices/ex6
