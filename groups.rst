@@ -359,7 +359,7 @@ of group theory, it is conventional to use integers from :math:`1` up to
 this set has :math:`n` elements.
 
 This is a very important group so it has a name: it is called the *symmetric
-group of order* :math:`n`. We denote this group by :math:`S_n`.
+group of degree* :math:`n`. We denote this group by :math:`S_n`.
 
 As for checking the group laws for :math:`S_n`: we have already shown that
 :math:`(\mathrm{Maps}(X, X), \circ)` is a monoid, which means that we
