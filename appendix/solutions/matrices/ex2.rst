@@ -1,4 +1,4 @@
-Exercise 4.2
+Exercise 5.2
 ============
 
 We need to come up with a recipe for finding the inverse of a vector in

@@ -408,14 +408,16 @@ satisfies the following additional law:
 
 * *Commutativity.* :math:`\forall g, h \in G.\; g*h = h*g`.
 
-All but one of the groups we have seen so far have been Abelian; in particular,
+Almost all of the groups we have seen so far have been Abelian; in particular,
 you were probably already aware that :math:`x + y = y + x` for all :math:`x, y
 \in \mathbb{R}`.
 
+The only non-Abelian groups we have seen so far are the symmetric groups: the
+symmetric group of degree :math:`n` is non-Abelian whenever :math:`n \geq 3`.
+
 It is possible to prove, although we will not do so here, that any finite
-non-Abelian group must have at least :math:`6` elements. In fact, we have seen
-one such group already: the symmetric group of order :math:`3`, :math:`S_3`,
-has exactly :math:`6` elements and is non-Abelian.
+non-Abelian group must have at least :math:`6` elements. In fact, the symmetric
+group of degree :math:`3`, that is :math:`S_3`, has exactly :math:`6` elements.
 
 A final note on groups
 ----------------------

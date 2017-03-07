@@ -1,11 +1,11 @@
 Matrices
 ========
 
-Matrices are a source of many important examples of the algebraic structures we
-are interested in, so we're going to get a bit more concrete in this chapter
-and talk about matrices for a bit. You may already be aware that matrices have
-many applications in computing; two examples that spring to my mind are 3D
-graphics and machine learning.
+Matrices are a source of many important examples of rings and fields, so we're
+going to get a bit more concrete in this chapter and talk about matrices for a
+bit. You may already be aware that matrices have many applications in
+computing; two examples that spring to my mind are 3D graphics and machine
+learning.
 
 Vectors
 -------
@@ -50,13 +50,13 @@ operation is called *scalar multiplication:*
   3\boldsymbol{x} &= \begin{bmatrix}3 \times 1\\3 \times 0\end{bmatrix} \\
                   &= \begin{bmatrix}3\\0\end{bmatrix}
 
-**Exercise 4.1.** We have seen that :math:`\mathbb{R}^2` is closed under vector
+**Exercise 5.1.** We have seen that :math:`\mathbb{R}^2` is closed under vector
 addition (that is, adding two vectors always gives you another vector), and
 also that there is an identity element for vector addition in
 :math:`\mathbb{R}^2`. Now, show that :math:`(\mathbb{R}^2, +)` is a monoid
-by checking the remaining monoid law.
+by checking the remaining monoid law (associativity).
 
-**Exercise 4.2.** Show that :math:`(\mathbb{R}^2, +)` is a group by explaining
+**Exercise 5.2.** Show that :math:`(\mathbb{R}^2, +)` is a group by explaining
 how to find the inverse of an element.
 
 A note on the previous exercise: :math:`(\mathbb{R}^n, +)` is actually a group
@@ -64,7 +64,7 @@ for any :math:`n`, not just :math:`n = 2`. We will spend the majority of this
 chapter working with :math:`\mathbb{R}^2`, but everything we're doing
 generalises very naturally to different choices of :math:`n`.
 
-**Exercise 4.3.** Show that scalar multiplication distributes over vector
+**Exercise 5.3.** Show that scalar multiplication distributes over vector
 addition in :math:`\mathbb{R}^2`; that is, :math:`\forall \boldsymbol{x},
 \boldsymbol{y} \in \mathbb{R}^2, k \in \mathbb{R}.\; k(\boldsymbol{x} +
 \boldsymbol{y}) = k\boldsymbol{x} + k\boldsymbol{y}`.
@@ -99,7 +99,7 @@ We sometimes need to be a bit careful about keeping track of which operations
 are which; in particular, note that in the first equation, we have *vector*
 addition on the left hand side, but *scalar* addition on the right.
 
-**Exercise 4.4.** Prove these two identities. Hint: we already know that
+**Exercise 5.4.** Prove these two identities. Hint: we already know that
 multiplication distributes over addition in :math:`\mathbb{R}`; that is,
 :math:`\forall x, y, z \in \mathbb{R}.\; x(y + z) = xy + xz`.
 
@@ -165,13 +165,13 @@ have a vector and a scalar, we can multiply the vector by the scalar and then
 apply :math:`f`, or apply :math:`f` to the vector first and then do the scalar
 multiplication on the result, but either way the we end up with the same vector.
 
-**Exercise 4.5.** Prove this, using previously given properties of the dot
+**Exercise 5.5.** Prove this, using previously given properties of the dot
 product.
 
 Functions of this kind are important enough that we have a name for them:
 *linear mappings*.
 
-**Exercise 4.6.** Show that the composition of two linear mappings is itself
+**Exercise 5.6.** Show that the composition of two linear mappings is itself
 a linear mapping. That is, if :math:`f` and :math:`g` are linear mappings, then
 the function :math:`f \circ g`, which is defined as :math:`\boldsymbol{x}
 \mapsto f(g(\boldsymbol{x}))`, is itself a linear mapping.
@@ -216,9 +216,9 @@ out to be too much of a problem in practice, as it's usually clear from context
 which is meant.
 
 As you might expect, for any pair of natural numbers :math:`m, n
-\in \mathbb{N}`, the set of :math:`m \times n` matrices forms a group under
-addition. Note that matrices must have the same dimensions if you want to be
-able to add them together.
+\in \mathbb{N}`, the set of :math:`m \times n` matrices forms an Abelian group
+under addition. Note that matrices must have the same dimensions if you want to
+be able to add them together.
 
 We represent a linear mapping from :math:`\mathbb{R}^2` to :math:`\mathbb{R}^2`
 as a matrix by taking the vectors :math:`\boldsymbol{a_1}` and
@@ -363,10 +363,16 @@ Matrix multiplication also distributes over matrix addition. That is, for
 
   (A+B)C = AC + BC
 
-just like with real numbers.
+just like with real numbers. Therefore, we have seen that the three ring laws
+for the set of :math:`n \times n` matrices under matrix addition and matrix
+multiplication hold, and therefore this set is a ring. We denote the ring of
+:math:`n \times n` matrices with entries in :math:`\mathbb{R}` by
+:math:`\mathrm{Mat}(n; \mathbb{R})`.
 
-However, unlike real numbers, matrix multiplication is not commutative. That
-is, :math:`AB` does not always equal :math:`BA`. For example, if we have
+However, unlike real numbers, matrix multiplication is not commutative. In fact
+I promised to show you a non-commutative ring in the previous chapter; here it
+is! With matrices, :math:`AB` does not always equal :math:`BA`. For example, if
+we have
 
 .. math::
   A = \begin{bmatrix}

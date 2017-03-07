@@ -1,4 +1,4 @@
-Exercise 4.1
+Exercise 5.1
 ============
 
 We need to prove the associativity law for :math:`(\mathbb{R}^2, +)`; that is,

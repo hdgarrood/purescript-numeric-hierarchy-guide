@@ -7,4 +7,5 @@ Solutions to Exercises
   solutions/logic
   solutions/monoids
   solutions/groups
+  solutions/rings
   solutions/matrices
