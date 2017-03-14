@@ -191,7 +191,7 @@ We can write a set by listing the elements in between curly braces, like this:
 Note that sets have no concept of ordering, so the set :math:`\{1, 3, 2\}` is
 the same as the set :math:`\{1, 2, 3\}`.
 
-The only thing we can really do with a set is to ask whether it contains some a
+The only thing we can really do with a set is to ask whether it contains some
 particular thing. The notation for the statement ":math:`a` exists within the
 set :math:`A`" looks like this:
 
