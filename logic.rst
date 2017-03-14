@@ -186,7 +186,7 @@ We can write a set by listing the elements in between curly braces, like this:
 
 .. math::
 
-  \{1, 2, 3\}.
+  \{1, 2, 3\}
 
 Note that sets have no concept of ordering, so the set :math:`\{1, 3, 2\}` is
 the same as the set :math:`\{1, 2, 3\}`.
