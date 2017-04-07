@@ -99,8 +99,9 @@ We sometimes need to be a bit careful about keeping track of which operations
 are which; in particular, note that in the first equation, we have *vector*
 addition on the left hand side, but *scalar* addition on the right.
 
-**Exercise 5.4.** Prove these two identities regarding dot products. Hint: we
-already know that multiplication distributes over addition in
+**Exercise 5.4.** Prove these two identities regarding the interaction of the
+dot product with vector addition and scalar multiplication respectively. Hint:
+we already know that multiplication distributes over addition in
 :math:`\mathbb{R}`; that is, :math:`\forall x, y, z \in \mathbb{R}.\; x(y + z)
 = xy + xz`.
 
