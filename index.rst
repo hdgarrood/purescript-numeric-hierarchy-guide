@@ -13,5 +13,6 @@ Table of contents
    groups
    rings
    matrices
+   integral-domains
 
    appendix/index

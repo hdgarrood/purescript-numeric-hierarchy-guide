@@ -83,6 +83,11 @@ Finally, multiplication distributes over addition in :math:`\mathbb{Z}_3` too;
 we sort of get this "for free" since we have defined multiplication and
 addition in terms of normal multiplication and addition in :math:`\mathbb{Z}`.
 
+More generally, :math:`\mathbb{Z}_m` is a ring for any positive integer
+:math:`m`, with multiplication defined in exactly the same way. So for example,
+in :math:`\mathbb{Z}_{12}`, the product :math:`\overline{5} \cdot \overline{6}
+= \overline{30} = \overline{6}`.
+
 The definition
 --------------
 
@@ -119,11 +124,17 @@ not be commutative! A ring in which the multiplication operation is commutative
 is called a *commutative ring.* So far, all the rings we have seen have
 commutative, but we will soon see some examples of non-commutative rings.
 
+One last thing that I should mention quickly: just as there is a trivial monoid
+and a trivial group, there is a trivial ring with just one element, usually
+written :math:`\{0\}`. This ring is called the **zero ring**. It is not very
+interesting so we often rule it out by saying we a dealing with a "non-zero
+ring"; this just means any ring but the zero ring.
+
 Properties of rings
 -------------------
 
 So I have just shown you three examples of rings: :math:`\mathbb{R}`,
-:math:`\mathrm{Bool}`, and :math:`\mathbb{Z}_3`. I will introduce a few more
+:math:`\mathrm{Bool}`, and :math:`\mathbb{Z}_m`. I will introduce a few more
 exotic examples of rings in subsequent chapters, but for now, we will establish
 a few properties which all rings have.
 
