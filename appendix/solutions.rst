@@ -9,3 +9,4 @@ Solutions to Exercises
   solutions/groups
   solutions/rings
   solutions/matrices
+  solutions/integral-domains

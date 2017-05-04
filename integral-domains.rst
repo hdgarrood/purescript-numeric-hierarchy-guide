@@ -80,31 +80,36 @@ product :math:`ab \neq 0` (why?).
 The natural first example of an integral domain is :math:`\mathbb{Z}`, and this
 is probably where the name "integral domain" comes from.
 
-Another example of an integral domain :math:`\mathbb{Z}_2`. Why is this an
+Our next example of an integral domain is :math:`\mathbb{Z}_2`. Why is this an
 integral domain? Well, it only has two elements: :math:`\overline{0}` and
 :math:`\overline{1}`. We can immediately rule out :math:`\overline{0}`, because
 that is part of the definition of a zero-divisor. We also saw in exercise 6.2
 that :math:`\overline{1}` cannot be a zero-divisor of :math:`\mathbb{Z}_2`
 because it is the multiplicative identity. Therefore :math:`\mathbb{Z}_2` has
-no zero-divisors. It is also a commutative ring, as we saw in a previous
-chapter.  Therefore :math:`\mathbb{Z}_2` is an integral domain.
+no zero-divisors. It is also a commutative ring, as we saw in the Rings
+chapter. So we have established that :math:`\mathbb{Z}_2` satisfies both of the
+requirements to be an integral domain.
 
-One non-example which we have seen is :math:`\mathrm{Mat}(2;\mathbb{R})`. This
-is not an integral domain because the matrix :math:`A` from earlier in this
-chapter is a zero-divisor.
+We have also seen some non-examples. We found a zero-divisor in
+:math:`\mathbb{Z}_{12}` in exercise 6.1, so :math:`\mathbb{Z}_{12}` is not an
+integral domain. We also saw a zero-divisor in
+:math:`\mathrm{Mat}(2;\mathbb{R})` earlier in this chapter, namely the matrix
+:math:`A`, so this ring is not an integral domain either. We could also show
+that :math:`\mathrm{Mat}(2;\mathbb{R})` is not an integral domain by observing
+that it is not commutative.
 
-**Exercise 6.3.** Show that :math:`\mathbb{Z}_{12}` is not an integral domain
-by finding a zero-divisor.
+**Exercise 6.3.** Show that :math:`\mathbb{Z}_{8}` is not an integral domain.
 
 An interesting consequence of exercise 6.3 is that whether or not
 :math:`\mathbb{Z}_m` is an integral domain depends on the choice of :math:`m`;
 we now know that :math:`\mathbb{Z}_2` is an integral domain, but
-:math:`\mathbb{Z}_12` is not.
+:math:`\mathbb{Z}_{12}` and :math:`\mathbb{Z}_8` are not.
 
 **Exercise 6.4. (hard)** Try to establish whether :math:`\mathbb{Z}_m` is an
 integral domain for a few more choices of :math:`m`. Can you think of a rule
 for determining whether :math:`\mathbb{Z}_m` is an integral domain for any
-given :math:`m`?
+given :math:`m \geq 2`? Hint: all integers greater than or equal to :math:`2`
+have a unique prime factorisation.
 
 The cancellation law for integral domains
 -----------------------------------------
@@ -129,5 +134,5 @@ To prove this, suppose we have :math:`a, b, c \in R` with :math:`a \neq 0` and
   gave for why the cancellation law holds in :math:`\mathbb{R}`. The reason for
   this is that in :math:`\mathbb{R}`, every nonzero number has a multiplicative
   inverse, but this is not always true in an integral domain. For example,
-  :math:`2` has no multiplicative inverse in :math:`\mathbb{Z}`.
-
+  :math:`2` has no multiplicative inverse in :math:`\mathbb{Z}`. We will talk
+  more about multiplicative inverses later on, when we get on to fields.
