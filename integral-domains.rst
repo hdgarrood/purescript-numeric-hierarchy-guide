@@ -106,10 +106,9 @@ we now know that :math:`\mathbb{Z}_2` is an integral domain, but
 :math:`\mathbb{Z}_{12}` and :math:`\mathbb{Z}_8` are not.
 
 **Exercise 6.4. (hard)** Try to establish whether :math:`\mathbb{Z}_m` is an
-integral domain for a few more choices of :math:`m`. Can you think of a rule
+integral domain for a couple more choices of :math:`m`. Can you think of a rule
 for determining whether :math:`\mathbb{Z}_m` is an integral domain for any
-given :math:`m \geq 2`? Hint: all integers greater than or equal to :math:`2`
-have a unique prime factorisation.
+given :math:`m \geq 2`?
 
 The cancellation law for integral domains
 -----------------------------------------
