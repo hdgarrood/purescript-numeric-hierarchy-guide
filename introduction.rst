@@ -6,6 +6,18 @@ behind the numeric hierarchy of type classes in PureScript's Prelude, aimed at
 people who haven't (necessarily) studied mathematics beyond a high-school
 level.
 
+Status
+------
+
+Beta. There are still quite a few chapters I want to write. In particular, the
+following are currently missing:
+
+* Euclidean domains
+* Fields
+* Complex numbers (a very important example of a field)
+* Semirings
+* When two rings are "the same" (and what that means)
+
 Why?
 ----
 
