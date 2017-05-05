@@ -81,14 +81,15 @@ The natural first example of an integral domain is :math:`\mathbb{Z}`, and this
 is probably where the name "integral domain" comes from.
 
 Our next example of an integral domain is :math:`\mathbb{Z}_2`. Why is this an
-integral domain? Well, it only has two elements: :math:`\overline{0}` and
+integral domain? Well, first, we know it is a commutative ring (we saw this in
+the Rings chapter). But we still need to check it has no zero-divisors. In this
+case there are only two elements to check: :math:`\overline{0}` and
 :math:`\overline{1}`. We can immediately rule out :math:`\overline{0}`, because
-that is part of the definition of a zero-divisor. We also saw in exercise 6.2
-that :math:`\overline{1}` cannot be a zero-divisor of :math:`\mathbb{Z}_2`
-because it is the multiplicative identity. Therefore :math:`\mathbb{Z}_2` has
-no zero-divisors. It is also a commutative ring, as we saw in the Rings
-chapter. So we have established that :math:`\mathbb{Z}_2` satisfies both of the
-requirements to be an integral domain.
+a zero-divisor must be nonzero. We also saw in exercise 6.2 that
+:math:`\overline{1}` cannot be a zero-divisor of :math:`\mathbb{Z}_2` because
+it is the multiplicative identity. Therefore :math:`\mathbb{Z}_2` has no
+zero-divisors. So we have established that :math:`\mathbb{Z}_2` satisfies both
+of the requirements to be an integral domain.
 
 We have also seen some non-examples. We found a zero-divisor in
 :math:`\mathbb{Z}_{12}` in exercise 6.1, so :math:`\mathbb{Z}_{12}` is not an
@@ -100,10 +101,10 @@ that it is not commutative.
 
 **Exercise 6.3.** Show that :math:`\mathbb{Z}_{8}` is not an integral domain.
 
-An interesting consequence of exercise 6.3 is that whether or not
+I think it is quite an interesting result that whether or not
 :math:`\mathbb{Z}_m` is an integral domain depends on the choice of :math:`m`;
-we now know that :math:`\mathbb{Z}_2` is an integral domain, but
-:math:`\mathbb{Z}_{12}` and :math:`\mathbb{Z}_8` are not.
+in particular, we now know that :math:`\mathbb{Z}_2` is an integral domain, but
+neither of :math:`\mathbb{Z}_{12}` or :math:`\mathbb{Z}_8` are.
 
 **Exercise 6.4. (hard)** Try to establish whether :math:`\mathbb{Z}_m` is an
 integral domain for a couple more choices of :math:`m`. Can you think of a rule
