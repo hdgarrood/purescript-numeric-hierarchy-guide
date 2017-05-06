@@ -110,10 +110,11 @@ one identity element. You have to construct an argument which will work for
 *any* monoid, which means you aren't allowed to assume anything beyond what is
 in the definition of a monoid.
 
-A quick note on the previous exercise: in general, if we want to prove that
-there is a unique element of some set which has some particular property, we do
-this by taking two arbitrary elements of the set, assuming that they both have
-this property, and then showing that they must be equal.
+.. note::
+  In general, if we want to prove that there is a unique element of some set
+  which has some particular property, we do this by taking two arbitrary
+  elements of the set, assuming that they both have this property, and then
+  showing that they must be equal.
 
 Since monoids have a unique identity element, we can talk about *the* identity
 element of a monoid, rather than just *an* identity element.

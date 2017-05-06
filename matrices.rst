@@ -59,10 +59,11 @@ by checking the remaining monoid law (associativity).
 **Exercise 5.2.** Show that :math:`(\mathbb{R}^2, +)` is a group by explaining
 how to find the inverse of an element.
 
-A note on the previous exercise: :math:`(\mathbb{R}^n, +)` is actually a group
-for any :math:`n`, not just :math:`n = 2`. We will spend the majority of this
-chapter working with :math:`\mathbb{R}^2`, but everything we're doing
-generalises very naturally to different choices of :math:`n`.
+.. note::
+  :math:`(\mathbb{R}^n, +)` is actually a group for any :math:`n`, not
+  just :math:`n = 2`. We will spend the majority of this chapter working
+  with :math:`\mathbb{R}^2`, but everything we're doing generalises very
+  naturally to different choices of :math:`n`.
 
 **Exercise 5.3.** Show that scalar multiplication distributes over vector
 addition in :math:`\mathbb{R}^2`; that is, :math:`\forall \boldsymbol{x},
