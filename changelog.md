@@ -1,5 +1,11 @@
 # Changelog
 
+## Update 2, 2017-05-05
+
+* The guide is now in beta.
+* New chapter: integral domains
+* Minor clarifications and additions on the ring of integers modulo m.
+
 ## Update 1, 2017-03-06
 
 * Add solutions for all exercises
