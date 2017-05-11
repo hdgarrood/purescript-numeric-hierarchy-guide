@@ -79,14 +79,14 @@ For example, :math:`\overline{1} \cdot \overline{2} = \overline{1 \times 2} =
 This makes :math:`(\mathbb{Z}_3, \cdot)` into a monoid, with identity
 :math:`\overline{1}`.
 
-Finally, multiplication distributes over addition in :math:`\mathbb{Z}_3` too;
-we sort of get this "for free" since we have defined multiplication and
-addition in terms of normal multiplication and addition in :math:`\mathbb{Z}`.
-
 More generally, :math:`\mathbb{Z}_m` is a monoid for any positive integer
 :math:`m`, with multiplication defined in exactly the same way. So for example,
 in :math:`\mathbb{Z}_{12}`, the product :math:`\overline{5} \cdot \overline{6}
 = \overline{30} = \overline{6}`.
+
+Finally, multiplication distributes over addition in :math:`\mathbb{Z}_3` too;
+we sort of get this "for free" since we have defined multiplication and
+addition in terms of normal multiplication and addition in :math:`\mathbb{Z}`.
 
 The definition
 --------------
