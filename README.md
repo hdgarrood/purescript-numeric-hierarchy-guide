@@ -32,7 +32,7 @@ work, in case I ever want to publish it as a book or anything like that.
 
 ## License
 
-![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+[![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This work is licensed under [CC BY-NC-SA 4.0][] — that is, the Creative Commons
 Attribution-NonCommercial-ShareAlike 4.0 International License. This means you
