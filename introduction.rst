@@ -87,3 +87,22 @@ mean this as a criticism of the writing style of mathematicians, but rather to
 help avoid unrealistic expectations. In fact I think this density is a mostly
 unavoidable consequence of the nature of mathematics. Don't be put off if it
 takes you a long time to get through this!
+
+License
+-------
+
+.. image:: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
+   :target: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+This work is licensed under a `Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License
+<https://creativecommons.org/licenses/by-nc-sa/4.0/>`_.
+
+This means you are free to copy and redistribute it as well as make changes,
+but you must give credit, link to the license, and indicate if changes were
+made. The license also forbids commercial use.
+
+Note that the work is not necessarily exclusively licensed under CC BY-NC-SA
+4.0. In particular, if you're worried about whether your use of it counts as a
+commercial use please contact me and we'll probably be able to sort something
+out.
