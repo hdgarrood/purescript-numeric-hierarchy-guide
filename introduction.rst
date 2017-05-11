@@ -54,9 +54,16 @@ a part of this guide, please let me know by `opening an issue on
 GitHub <https://github.com/hdgarrood/purescript-numeric-hierarchy-guide>`_ or
 emailing me at harry@garrood.me.
 
-I will, however, assume a basic knowledge of PureScript. For example, you
-should be reasonably comfortable with what a type class is and how to define
-them.
+Although this guide is primarily aimed at PureScript users, I will only
+reference PureScript infrequently for the purpose of illustrating examples.
+This guide is really about mathematics, not PureScript.
+
+Therefore, as far as is reasonably possible, I am also interested in making
+this guide accessible to programmers using other languages or libraries which
+make use of these same abstractions (rings, fields, etc). If you fit into this
+category, and you are unable to follow something I've written because it
+requires more than a very basic level of PureScript knowledge, please feel free
+to file an issue.
 
 How to read this guide
 ----------------------
