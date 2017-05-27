@@ -23,12 +23,12 @@ The *degree* of a polynomial is the highest power of :math:`x` appearing. So
 for example, the degree of :math:`5x^2 + 2x + 4` is :math:`2`, and the degree
 of :math:`x^3 + 1` is :math:`3`.
 
-Polynomial addition and multiplication works how you would expect. To add two
-polynomials together, we simply add together the coefficients of matching pairs
-of terms. So for example, we add together the coefficients of :math:`x` to
-obtain the coefficient of :math:`x` in the result, we add the coefficients of
-:math:`x^2` to obtain the coefficient of :math:`x^2` in the result, and so on.
-For example:
+Polynomial addition and multiplication both work how you would expect. To add
+two polynomials together, we simply add together the coefficients of matching
+pairs of terms. So for example, we add together the coefficients of :math:`x`
+to obtain the coefficient of :math:`x` in the result, we add the coefficients
+of :math:`x^2` to obtain the coefficient of :math:`x^2` in the
+result, and so on.  For example:
 
 .. math::
   (5x^2 + 2x + 4) + (3x + 2)
