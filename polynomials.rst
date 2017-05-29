@@ -50,9 +50,55 @@ For example:
 
 In the examples we have seen so far, the coefficients have come from
 :math:`\mathbb{R}`. However, we can choose coefficients from any ring. We
-denote the set of polynomials of coefficients in some ring :math:`R` by
+denote the set of polynomials with coefficients in some ring :math:`R` by
 :math:`R[x]`.
 
 So, if we let :math:`R` be any ring, then :math:`R[x]` is a ring too; the
 additive and multiplicative identities in :math:`R[x]` are :math:`0_R` and
 :math:`1_R` respectively.
+
+Here are some polynomials in the ring :math:`\mathbb{Z}_3[x]`:
+
+.. math::
+  &\overline{2} \\
+  &x^3 + \overline{2} \\
+  &\overline{2}x^2 + x + \overline{1}
+
+Note that we usually don't bother writing down the coefficient if it is the
+multiplicative identity; the second example there could also have been written
+:math:`\overline{1}x^3 + \overline{2}`.
+
+Polynomial division
+-------------------
+
+We have seen that we can define addition and multiplication operations on
+polynomials
+
+Integer division
+----------------
+
+You may already be aware that although integers can not always be divided
+exactly, they can divided in a slightly looser sense. More formally, if we have
+two integers :math:`a, b`, with :math:`b \neq 0`, then there exists a pair of
+integers :math:`q` and :math:`r` such that :math:`a = qb + r`, and :math:`0
+\leq r < \lvert q \rvert`. We usually call :math:`q` the *quotient* and we call
+:math:`r` the *remainder*. In fact :math:`q` and :math:`r` are guaranteed to be
+unique; there is always exactly one choice for them which satisfies both
+of the conditions listed above.
+
+.. note::
+  If :math:`x` is an integer, :math:`\lvert x \rvert` is pronounced "the
+  absolute value of x", and is defined as follows:
+
+  .. math::
+    \lvert x \rvert = \begin{cases}
+                        x & \mathrm{if}\; x \geq 0 \\
+                        -x & \mathrm{if}\; x < 0
+                      \end{cases}
+
+Why did I suddenly start talking about integer division in a chapter about
+polynomials? Well, it turns out that polynomials can sometimes be divided in a
+similar way.
+
+Polynomial division
+-------------------

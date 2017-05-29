@@ -12,9 +12,9 @@ Status
 Beta. There are still quite a few chapters I want to write. In particular, the
 following are currently missing:
 
-* Euclidean domains
 * Fields
 * Complex numbers (a very important example of a field)
+* Euclidean domains
 * Semirings
 * When two rings are "the same" (and what that means)
 

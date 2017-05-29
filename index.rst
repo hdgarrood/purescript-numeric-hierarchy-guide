@@ -14,6 +14,7 @@ Table of contents
    rings
    matrices
    integral-domains
+   fields
    polynomials
 
    appendix/index
