@@ -5,11 +5,9 @@ We are finally ready to talk about one of the most important types of rings,
 namely *fields*. A field is a commutative ring for which all nonzero elements
 have multiplicative inverses. That is, if :math:`F` is a field, and :math:`x
 \in F`, then there exists an element :math:`y \in F` such that :math:`xy = 1`.
-We usually use the notation :math:`x^{-1}` for the multiplicative inverse of
-:math:`x` in a field.
-
-Equivalently, a field is a commutative ring for which the nonzero elements form
-a group under multiplication.
+Equivalently, we can define a field as a commutative ring for which the nonzero
+elements form a group under multiplication. We usually use the notation
+:math:`x^{-1}` for the multiplicative inverse of :math:`x` in a field.
 
 Here are some examples of fields which we have already seen:
 
@@ -129,7 +127,7 @@ and therefore :math:`F` is an integral domain.
 
 This gives us a useful trick for determining whether some ring is a field or
 not: since all fields are integral domains, we can immediately deduce that a
-ring cannot be a field if it fails to be an integral domain, i.e. if it has any
+ring cannot be a field if it fails to be an integral domain, e.g. if it has any
 zero-divisors. Note that for two of the three non-examples of fields listed
 earlier, namely :math:`\mathbb{Z}_4` and :math:`\mathrm{Mat}(2;\mathbb{R})`, it
 can be shown that they are not fields in this way.
@@ -168,3 +166,18 @@ multiplicative inverse for :math:`a`.
 We have now found a multiplicative inverse for every nonzero element of
 :math:`R`, and we have by assumption that :math:`R` is commutative, so it
 follows that :math:`R` is a field.
+
+Look back now to exercise 6.4 in the previous chapter, which asks you to
+provide a rule for whether :math:`\mathbb{Z}_m` is an integral domain given any
+:math:`m \geq 2`. This is quite a difficult exercise but the result is quite
+useful, so I recommend that you look at the solution now if you weren't able to
+solve it yourself.
+
+Using our new result that every finite integral domain is a field, we can now
+strengthen the result we found in exercise 6.4: since :math:`\mathbb{Z}_m` is
+finite, if it is an integral domain, it must be a field. The field of integers
+modulo :math:`m` for an appropriately chosen :math:`m` (I'm deliberately being
+vague to avoid spoiling you for exercise 6.4 if you want to have another go at
+it) is generally my go-to example of a field, as these fields tend to be the
+simplest to deal with and can be faithfully represented on computers very
+easily — unlike, say, :math:`\mathbb{R}`.

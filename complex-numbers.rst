@@ -10,7 +10,13 @@ group. In this section we will come across a multiplication operation on
 usually write this field as :math:`\mathbb{C}` rather than
 :math:`\mathbb{R}^2`.
 
-Complex numbers have a variety of real-world applications, [TODO]
+Complex numbers have a variety of applications, including in geometry, for e.g.
+representing figures in two dimensions, or representing projections of
+three-dimensional objects onto a plane, for modelling behaviour of electrical
+signals, and for analysing the behaviour of systems which can be modelled using
+differential equations, such as how populations of different species in a food
+web change over time, how heat flows through an object, or how mechanical
+systems like suspension in a car will behave.
 
 First, instead of writing elements of :math:`\mathbb{R}^2` in the usual way,
 i.e. :math:`(a, b)`, we will write them as :math:`a + bi`, where :math:`a` and
@@ -79,7 +85,7 @@ numbers, we can multiply top and bottom by the same quantity:
 Now we have the product of a complex number with a real number, i.e. we have
 :math:`a - bi` multiplied by :math:`\frac{1}{a^2 + b^2}`. As we showed before
 we can simply multiply the real and imaginary parts by this real number,
-yielding the inverse of :math:`a + bi` as:
+which gives us the inverse of :math:`a + bi` as:
 
 .. math::
   \frac{a-bi}{a^2+b^2}
@@ -94,7 +100,7 @@ just to be safe:
   &= \frac{a^2 + b^2}{a^2 + b^2} \\
   &= 1
 
-Geometric interpretations
--------------------------
+So there you have it — we can indeed make :math:`\mathbb{R}^2` into a field!
 
-TODO
+There is so, so much more I could say about complex numbers, but I think I will
+leave it here for now.
