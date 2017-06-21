@@ -36,8 +36,7 @@ I want to stress that it is *not* necessary to read and understand all of this
 in order to be able to use the PureScript type classes like ``Ring`` or
 ``Field``, and to be able to write functions which work for any type which has
 a ``Ring`` or ``Field`` instance. However, I do hope that it will help you
-answer questions
-such as:
+answer questions such as:
 
 * "I want to write a function which works for many different numeric
   types, but should I give it a ``Semiring`` constraint, or a ``Ring``
