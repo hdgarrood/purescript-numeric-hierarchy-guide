@@ -88,8 +88,7 @@ we can simply multiply the real and imaginary parts by this real number,
 which gives us the inverse of :math:`a + bi` as:
 
 .. math::
-  \frac{a-bi}{a^2+b^2}
-  &= \frac{a}{a^2+b^2} - \frac{b}{a^2+b^2}i
+  \frac{a-bi}{a^2+b^2} = \frac{a}{a^2+b^2} - \frac{b}{a^2+b^2}i
 
 Let's check that this really is the multiplicative inverse of :math:`a + bi`,
 just to be safe:
