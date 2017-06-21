@@ -15,6 +15,7 @@ Table of contents
    matrices
    integral-domains
    fields
+   complex-numbers
    polynomials
 
    appendix/index

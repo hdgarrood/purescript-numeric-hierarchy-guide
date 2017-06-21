@@ -236,6 +236,8 @@ although I might do later.
 :math:`\mathbb{Z}_{12}`? That is, which element of :math:`\mathbb{Z}_{12}`
 solves the equation :math:`\overline{5} + \overline{x} = \overline{0}`?
 
+.. _injectivity-and-surjectivity:
+
 Permutations
 ------------
 
