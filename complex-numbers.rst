@@ -38,8 +38,8 @@ direction) and replacing :math:`i^2` with :math:`-1`, we can write this as
 .. note::
 
   This approach is a bit sloppy because we are assuming that
-  :math:`\mathbb{C}` is a field before even defining the multiplication
-  operation on :math:`\mathbb{C}`. I hope you can forgive me for this.
+  :math:`\mathbb{C}` is a field before even defining its multiplication
+  operation. I hope you can forgive me for this.
 
 Notice that the subset of :math:`\mathbb{C}` given by the complex numbers with
 an imaginary part of :math:`0` behaves in exactly the same way as
