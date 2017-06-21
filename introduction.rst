@@ -12,11 +12,12 @@ Status
 Beta. There are still quite a few chapters I want to write. In particular, the
 following are currently missing:
 
-* Fields
-* Complex numbers (a very important example of a field)
-* Euclidean domains
+* Euclidean domains (i.e. the ``EuclideanRing`` class)
+* Polynomials (a motivating example for the ``EuclideanRing`` class)
 * Semirings
 * When two rings are "the same" (and what that means)
+* General principles for formulating these mathematical structures as
+  PureScript type classes
 
 Why?
 ----
