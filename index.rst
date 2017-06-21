@@ -16,6 +16,5 @@ Table of contents
    integral-domains
    fields
    complex-numbers
-   polynomials
 
    appendix/index
