@@ -1,5 +1,10 @@
 # Changelog
 
+## Update 3, 2017-06-21
+
+* New chapter: fields
+* New chapter: complex numbers
+
 ## Update 2, 2017-05-05
 
 * The guide is now in beta.
