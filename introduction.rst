@@ -83,11 +83,11 @@ to look at the solution if you're really stuck; *attempting* the problem first
 is the most important thing.
 
 If you get stuck on an exercise for more than, say, 10 minutes, it's okay to
-skip it (although if you find yourself needing to skip lots of exercises,
-perhaps consider going back and rereading some earlier bits). Another good idea
-if you get stuck is to do something else and come back to the problem the
-following day — of course, if you're a programmer, you might already know
-this.
+skip it or simply look at the solution (although if you find yourself needing
+to skip lots of exercises, perhaps consider going back and rereading some
+earlier bits). Another good idea if you get stuck is to do something else and
+come back to the problem the following day — of course, if you're a programmer,
+you might already know this.
 
 One more thing I will say is that you shouldn't expect to be able to read this
 sort of material anywhere nearly as quickly as you might read most other types
