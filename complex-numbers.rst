@@ -6,7 +6,7 @@ defined an addition operation which made :math:`(\mathbb{R}^2, +)` an abelian
 group. In this section we will come across a multiplication operation on
 :math:`\mathbb{R}^2` and we will see that with these two operations,
 :math:`\mathbb{R}^2` can be made into a field, which is called the field of
-*complex numbers*. When we are making use of the field structure we will
+**complex numbers**. When we are making use of the field structure we will
 usually write this field as :math:`\mathbb{C}` rather than
 :math:`\mathbb{R}^2`.
 
@@ -63,10 +63,10 @@ commutative ring — that is, showing that all nonzero elements have
 multiplicative inverses — is more interesting.
 
 To find the multiplicative inverse of an arbitrary complex number, we use an
-operation called *conjugation*. The *conjugate* of a complex number is obtained
-by negating the imaginary part, i.e. the conjugate of :math:`a + bi` is
-:math:`a - bi`. The first thing to notice is that multiplying a complex number
-by its conjugate always yields a real number:
+operation called **conjugation**. The **conjugate** of a complex number is
+obtained by negating the imaginary part, i.e. the conjugate of :math:`a + bi`
+is :math:`a - bi`. The first thing to notice is that multiplying a complex
+number by its conjugate always yields a real number:
 
 .. math::
   (a + bi)(a - bi)

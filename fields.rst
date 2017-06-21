@@ -2,7 +2,7 @@ Fields
 ======
 
 We are finally ready to talk about one of the most important types of rings,
-namely *fields*. A field is a commutative ring for which all nonzero elements
+namely **fields**. A field is a commutative ring for which all nonzero elements
 have multiplicative inverses. That is, if :math:`F` is a field, and :math:`x
 \in F`, then there exists an element :math:`y \in F` such that :math:`xy = 1`.
 Equivalently, we can define a field as a commutative ring for which the nonzero
@@ -52,20 +52,20 @@ groups, so if you need a refresher now might be a good time to revisit it.
 Subsets
 ^^^^^^^
 
-Let :math:`A` and :math:`B` be sets. We say that :math:`A` is a subset of
+Let :math:`A` and :math:`B` be sets. We say that :math:`A` is a **subset** of
 :math:`B` if :math:`x \in A \Rightarrow x \in B`, that is, every element of
 :math:`A` is also an element of `B`. Symbolically, we write :math:`A \subseteq
 B`.
 
 One consequence of this definition is that every set is a subset of itself. If
-we want to rule out this case, we would say that :math:`A` is a *proper* subset
-of :math:`B`, and this is written :math:`A \subset B`.
+we want to rule out this case, we would say that :math:`A` is a **proper
+subset** of :math:`B`, and this is written :math:`A \subset B`.
 
 Images of functions
 ^^^^^^^^^^^^^^^^^^^
 
 We call the set of elements that can be produced as a result of applying
-a function :math:`f` to an element of its domain the *image* of :math:`f`.
+a function :math:`f` to an element of its domain the **image** of :math:`f`.
 Note that this set is necessarily a subset of the codomain; in fact, another
 way of defining a surjective function is one whose image is equal to its
 codomain.
