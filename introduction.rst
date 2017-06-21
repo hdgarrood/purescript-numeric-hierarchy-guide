@@ -41,10 +41,12 @@ such as:
 
 * "I want to write a function which works for many different numeric
   types, but should I give it a ``Semiring`` constraint, or a ``Ring``
-  constraint, or something else entirely?
+  constraint, or something else entirely?"
 * "I have written a function with a ``Field`` constraint, and I want to find an
   appropriate concrete type which is a ``Field`` to test it with. How do I do
   that?"
+* "What's the point in all of this maths mumbo-jumbo anyway — what's wrong with
+  plain old Haskell-style ``Num``?"
 
 Prerequisites
 -------------
