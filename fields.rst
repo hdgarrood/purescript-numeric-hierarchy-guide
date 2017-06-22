@@ -134,8 +134,8 @@ can be shown that they are not fields in this way.
 
 Let's do a quick recap on the hierarchy we have seen so far; we have:
 
-* rings :math:`\subset` commutative rings :math:`\subset` integral domains
-  :math:`\subset` fields.
+* rings :math:`\supset` commutative rings :math:`\supset` integral domains
+  :math:`\supset` fields.
 
 That is, every commutative ring is a ring (but not every ring is
 commutative), every integral domain is a commutative ring (but not every
