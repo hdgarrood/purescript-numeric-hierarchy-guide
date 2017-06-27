@@ -17,5 +17,6 @@ Table of contents
    fields
    complex-numbers
    polynomials
+   euclidean-rings
 
    appendix/index
