@@ -170,13 +170,14 @@ monic.
 
 .. note::
   For example, in :math:`\mathbb{R}[x]`, we can multiply the polynomial
-  :math:`2x + 1` through by :math:`\frac{1}{2}` to give :math:`x +
-  \frac{1}{2}`, which is monic. Note that we could do this if we were working
-  in :math:`\mathbb{Z}[x]`, because :math:`\mathbb{Z}` is not a field.
+  :math:`2x + 1` by :math:`\frac{1}{2}` to give :math:`x + \frac{1}{2}`, which
+  is monic. Note that we could do this if we were working in
+  :math:`\mathbb{Z}[x]`, because :math:`\mathbb{Z}` is not a field.
 
 Let :math:`c` be the leading coefficient of :math:`q`, so that :math:`c^{-1}q`
 is monic. Now we can use the previous result to divide :math:`p` by
 :math:`c^{-1}q`, which tells us that there are :math:`a` and :math:`b` such
 that :math:`p = c^{-1}aq + b`, with either :math:`\deg(b) < \deg(q)` or
-:math:`b = 0`.  So we have divided :math:`p` by :math:`q` by considering the
-quotient to be :math:`c^{-1}a` and the remainder to be :math:`b`.
+:math:`b = 0`. With a small shift in perspective we can now say that we have
+divided :math:`p` by :math:`q`, by considering the quotient to be
+:math:`c^{-1}a`.
