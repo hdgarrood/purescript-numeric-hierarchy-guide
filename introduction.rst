@@ -16,6 +16,8 @@ following are currently missing:
 * When two rings are "the same" (and what that means)
 * General principles for formulating these mathematical structures as
   PureScript type classes
+* A glossary
+* A diagram with an overview of this hierarchy
 
 Why?
 ----
