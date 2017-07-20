@@ -92,34 +92,6 @@ done.
 We can neatly wrap all of this up by simply saying that if :math:`R` is an
 integral domain then so is :math:`R[x]`.
 
-Integer division
-----------------
-
-You may already be aware that although integers can not always be divided
-exactly, they still allow a form of division. More formally, if we have two
-integers :math:`a, b`, with :math:`b \neq 0`, then there exists a pair of
-integers :math:`q` and :math:`r` such that :math:`a = qb + r`, and :math:`0
-\leq r < \lvert q \rvert`. We usually call :math:`q` the **quotient** and we
-call :math:`r` the **remainder**. In fact :math:`q` and :math:`r` are
-guaranteed to be unique; there is always exactly one choice for them which
-satisfies both of the conditions listed above.
-
-.. note::
-  If :math:`x` is a real number, :math:`\lvert x \rvert` is pronounced "the
-  absolute value of x", and is defined as follows:
-
-  .. math::
-    \lvert x \rvert = \begin{cases}
-                        x & \mathrm{if}\; x \geq 0 \\
-                        -x & \mathrm{if}\; x < 0
-                      \end{cases}
-
-  The absolute value of any real number is always nonnegative.
-
-Why did I suddenly start talking about integer division in a chapter about
-polynomials? Well, it turns out that polynomials can sometimes be divided in a
-similar way.
-
 Polynomial division
 -------------------
 
@@ -129,12 +101,12 @@ monic. Then, there exists :math:`a, b \in R[x]` such that :math:`p = aq + b`,
 and either :math:`\deg(b) < \deg(q)`, or :math:`b = 0`.
 
 Depending on your philosophy and outlook, it might or might not be a problem
-that the following proof of this result is non-constructive, i.e. it doesn't
-actually tell you how to find :math:`a` other than giving you a vague hint.
-It's also a little trickier than many of the proofs we've seen so far, so don't
-worry if you can't quite get your head around it straight away. We won't go on
-to do anything that requires understanding this proof; the important thing is
-really just being aware of the result.
+that the following proof of this result is non-constructive, i.e. it proves
+that :math:`a` and :math:`b` exist, but it doesn't give you an algorithm for
+finding them. It's also a little trickier than many of the proofs we've seen so
+far, so don't worry if you can't quite get your head around it straight away.
+We won't go on to do anything that requires understanding this proof; we really
+just want to make sure we're aware of the result.
 
 Anyway, to prove this result, we start by choosing a polynomial :math:`a` which
 ensures that the degree of :math:`p - aq` is as small as possible. Note that it
@@ -172,7 +144,7 @@ monic.
   For example, in :math:`\mathbb{R}[x]`, we can multiply the polynomial
   :math:`2x + 1` by :math:`\frac{1}{2}` to give :math:`x + \frac{1}{2}`, which
   is monic. Note that we could do this if we were working in
-  :math:`\mathbb{Z}[x]`, because :math:`\mathbb{Z}` is not a field.
+  :math:`\mathbb{Z}[x]`.
 
 Let :math:`c` be the leading coefficient of :math:`q`, so that :math:`c^{-1}q`
 is monic. Now we can use the previous result to divide :math:`p` by
@@ -181,3 +153,8 @@ that :math:`p = c^{-1}aq + b`, with either :math:`\deg(b) < \deg(q)` or
 :math:`b = 0`. With a small shift in perspective we can now say that we have
 divided :math:`p` by :math:`q`, by considering the quotient to be
 :math:`c^{-1}a`.
+
+The important thing to notice is that this theorem bears a strong resemblance
+to the theorem regarding integer division which we saw in the previous chapter.
+So now we might ask: is there a generalisation which can unify these two
+concepts? The answer is of course yes: it's called a **euclidean ring**.

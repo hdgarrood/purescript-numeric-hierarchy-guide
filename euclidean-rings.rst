@@ -1,10 +1,13 @@
 Euclidean rings
 ===============
 
-The reason I introduced polynomials in the previous chapter is that they are a
-motivating example of a structure called a **euclidean ring**, or sometimes
-**euclidean domain**. In this chapter we will cover this structure in a
-slightly more abstract setting.
+Over the previous two chapters, we covered the Euclidean Algorithm, which
+allows you to compute the greatest common divisor of two integers. We also
+encountered a new example of a ring, namely polynomials, and noticed that they
+both support a very similar kind of division.
+
+It is this resemblance which motivates the idea of the structure we will cover
+in this chapter: **euclidean rings**.
 
 Let :math:`R` be an integral domain. A **euclidean function** is a function
 :math:`f : R \setminus \{ 0 \} \rightarrow \mathbb{N}` satisfying:
@@ -22,7 +25,17 @@ defined as
   A \setminus B = \{\, x \in A \,|\, x \notin B \,\}
 
 that is, the elements of :math:`A` which are not in :math:`B`. So if :math:`R`
-is a ring, then the set :math:`R \setminus \{0\}` is the set of nonzero
-elements of :math:`R`. Essentially, what we are doing here is saying that
+is a ring, then the set :math:`R \setminus \{0\}` consists of all elements of
+:math:`R` except :math:`0`. Essentially, what we are doing here is saying that
 for a euclidean function :math:`f`, the result of applying :math:`f` to
 :math:`0` need not be defined.
+
+A **euclidean ring**, or **euclidean domain**, is then defined as an integral
+domain which can be endowed with a euclidean function.
+
+I hinted at two examples of euclidean rings in the previous chapter. One is
+:math:`\mathbb{Z}`, and the other is the ring of polynomials with coefficients
+in some field. But what are their respective euclidean functions? In the case
+of the integers the euclidean function is the absolute value function, which
+takes :math:`x` to :math:`\lvert x \rvert`. In the case of polynomials over a
+field, the euclidean function is the degree function :math:`\deg`.

@@ -16,6 +16,7 @@ Table of contents
    integral-domains
    fields
    complex-numbers
+   euclidean-algorithm
    polynomials
    euclidean-rings
 
