@@ -41,6 +41,13 @@ Here are some non-examples:
   also because there are nonzero elements which do not have multiplicative
   inverses.
 
+We also have a name for rings in which all nonzero elements have multiplicative
+inverses but which are not necessarily commutative: these are called **division
+rings**, or sometimes **skew fields**. It just happens that most of the
+interesting examples of division rings are also fields, so we tend to spend
+more time thinking about fields.  There is, however, one important example of a
+division ring which is not a field, which we will see later on.
+
 A quick diversion into set theory
 ---------------------------------
 
