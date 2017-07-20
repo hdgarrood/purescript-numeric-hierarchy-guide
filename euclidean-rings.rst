@@ -212,6 +212,7 @@ that
 * any pair of elements has at least one greatest common divisor, in the sense
   that any other common divisor divides a GCD,
 * it has a euclidean function which tells you the "size" of an element (and
-  this sense of "size" is exactly same as in "greatest common divisor")
+  this sense of "size" is exactly same as the sense of "greatest" in "greatest
+  common divisor")
 * the Euclidean Algorithm can be used to find a GCD of any two elements of the
   ring.
