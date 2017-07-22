@@ -164,3 +164,37 @@ y \in R.\; (-x)y = -(xy)`. We can prove this too:
 **Exercise 4.1.** Let :math:`R` be a ring. Prove that :math:`(-x)(-y) = xy` for
 all :math:`x, y \in R`. Maybe you will find this a satisfying explanation of
 why "a minus times a minus is a plus"!
+
+Semirings
+---------
+
+We might want to come up with a slightly weaker structure than a ring, in which
+we only require that :math:`(R, +)` is a commutative monoid rather than a
+group. Unfortunately, though, if we do this, our proof that anything times
+:math:`0` is :math:`0` will no longer work, because in the proof we used the
+fact that any ring forms a group under its addition operation.
+
+Having multiplication by :math:`0` always produce :math:`0` is a useful
+property, though, so to make sure it still holds, we add it as an extra law. We
+then obtain the following:
+
+A **semiring** is a set :math:`R` equipped with two binary operations :math:`+`
+and :math:`\cdot`, called "addition" and "multiplication" respectively, such
+that the three following laws hold:
+
+1. :math:`(R, +)` is a commutative monoid.
+2. :math:`(R, \cdot)` is a monoid.
+3. Multiplication distributes over addition. That is, for all :math:`x, y, z
+   \in R,`
+
+.. math::
+  x \cdot (y + z) = x \cdot y + x \cdot z
+
+  (x + y) \cdot z = x \cdot z + y \cdot z.
+
+4. Anything multiplied by :math:`0` is :math:`0`.
+
+I won't spend much time talking about semirings in this guide. One useful fact
+about semirings is that the natural numbers do form a semiring, although they
+do not form a ring; recall that :math:`(\mathbb{N}, +)` is a commutative monoid
+but not a group.
