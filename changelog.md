@@ -1,5 +1,14 @@
 # Changelog
 
+## Update 4, 2017-07-22
+
+* New chapter: the Euclidean Algorithm
+* New chapter: polynomials
+* New chapter: euclidean rings
+* Add note on semirings in rings chapter
+* Add note on units in fields chapter
+* Add note on division rings/skew fields in fields chapter
+
 ## Update 3, 2017-06-21
 
 * New chapter: fields
