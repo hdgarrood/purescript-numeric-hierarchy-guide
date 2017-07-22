@@ -2,12 +2,18 @@ Fields
 ======
 
 We are finally ready to talk about one of the most important types of rings,
-namely **fields**. A field is a commutative ring for which all nonzero elements
-have multiplicative inverses. That is, if :math:`F` is a field, and :math:`x
-\in F`, then there exists an element :math:`y \in F` such that :math:`xy = 1`.
-Equivalently, we can define a field as a commutative ring for which the nonzero
-elements form a group under multiplication. We usually use the notation
-:math:`x^{-1}` for the multiplicative inverse of :math:`x` in a field.
+namely **fields**.
+
+Let :math:`R` be a ring, and let :math:`x \in R`. We say that :math:`x` is a
+**unit** if there exists some :math:`y \in R` such that :math:`xy = yx = 1`,
+that is, if :math:`x` has a multiplicative inverse. For example, in any ring,
+:math:`1` is always a unit, and :math:`0` is never a unit.
+
+Then, a **field** is defined as a commutative ring in which every nonzero
+element is a unit. We can equivalently say that a field is a commutative ring
+for which the nonzero elements form a group under multiplication. We usually
+use the notation :math:`x^{-1}` for the multiplicative inverse of :math:`x` in
+a field.
 
 Here are some examples of fields which we have already seen:
 
@@ -40,6 +46,13 @@ Here are some non-examples:
   This fails to be a field because it is non-commutative, as we have seen, and
   also because there are nonzero elements which do not have multiplicative
   inverses.
+
+We also have a name for rings in which all nonzero elements are units but
+multiplication is not necessarily commutative: these are called **division
+rings**, or sometimes **skew fields**. It just happens that most of the
+interesting examples of division rings are also fields, so we tend to spend
+more time thinking about fields.  There is, however, one important example of a
+division ring which is not a field, which we will see later on.
 
 A quick diversion into set theory
 ---------------------------------
