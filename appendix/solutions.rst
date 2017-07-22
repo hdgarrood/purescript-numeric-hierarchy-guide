@@ -10,3 +10,5 @@ Solutions to Exercises
   solutions/rings
   solutions/matrices
   solutions/integral-domains
+  solutions/euclidean-algorithm
+  solutions/euclidean-rings

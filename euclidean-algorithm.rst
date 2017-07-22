@@ -109,6 +109,9 @@ last remainder is the greatest common divisor. In PureScript::
 
 (note that ``a `mod` b`` computes the remainder when dividing ``a`` by ``b``.)
 
+**Exercise 9.1.** Perform the Euclidean Algorithm on :math:`a = 1938`, :math:`b
+= 782`.
+
 How do we know that the algorithm terminates, though? We refer to the theorem
 from the beginning of the chapter:
 

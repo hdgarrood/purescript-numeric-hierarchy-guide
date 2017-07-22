@@ -70,6 +70,9 @@ Let :math:`R` be an integral domain. A **euclidean function** is a function
 * For all nonzero :math:`a` and :math:`b` in :math:`R`, we have :math:`f(a)
   \leq f(ab)`.
 
+A **euclidean ring**, or **euclidean domain**, is then defined as an integral
+domain which can be endowed with a euclidean function.
+
 .. note::
   On notation: if :math:`A` and :math:`B` are sets then their **difference** is
   defined as
@@ -83,15 +86,13 @@ Let :math:`R` be an integral domain. A **euclidean function** is a function
   for a euclidean function :math:`f`, the result of applying :math:`f` to
   :math:`0` need not be defined.
 
-A **euclidean ring**, or **euclidean domain**, is then defined as an integral
-domain which can be endowed with a euclidean function.
-
-How does this help us? Well, we now know that "remainders keep getting
-smaller". That is, if we perform the Euclidean Algorithm on a pair of elements
-:math:`a, b` from an arbitrary euclidean ring, then the first remainder
-:math:`r_1` will be smaller than :math:`b` in the sense that :math:`f(r_1) <
-f(b)`, and the second remainder :math:`r_2` will be smaller than :math:`r_1` in
-the sense that :math:`f(r_2) < f(r_1)`, and so on until we reach :math:`0`.
+The idea of this definition is that it allows us to say when "remainders
+keep getting smaller" still holds in a more general setting. If we perform the
+Euclidean Algorithm on a pair of elements :math:`a, b` from an arbitrary
+euclidean ring, then the first remainder :math:`r_1` will be smaller than
+:math:`b` in the sense that :math:`f(r_1) < f(b)`, and the second remainder
+:math:`r_2` will be smaller than :math:`r_1` in the sense that :math:`f(r_2) <
+f(r_1)`, and so on until we reach :math:`0`.
 
 So now we're done — we can use what is essentially the same argument as in the
 case of integers to show that our GCD algorithm actually works with any
@@ -141,7 +142,7 @@ remainder :math:`r`. We also have that :math:`r < -b,` so :math:`\lvert r
 \rvert < \lvert -b \rvert,` and of course :math:`\lvert -b \rvert = \lvert b
 \rvert,` so again :math:`\lvert r \rvert < \lvert b \rvert` as required.
 
-**Exercise ??** Complete the proof that the absolute value function is a
+**Exercise 11.1.** Complete the proof that the absolute value function is a
 euclidean function on :math:`\mathbb{Z}` by showing that :math:`\lvert a \rvert
 \leq \lvert ab \rvert` for all nonzero :math:`a, b \in \mathbb{Z}`.
 
@@ -156,7 +157,7 @@ in the correct form; looking back at the theorem from the previous chapter:
 So the degree function satisfies the first condition for being a euclidean
 function.
 
-**Exercise ??** Complete the proof that the degree function is a euclidean
+**Exercise 11.2.** Complete the proof that the degree function is a euclidean
 function on :math:`F[x]` by showing that :math:`\deg(a) \leq \deg(ab)` for all
 nonzero :math:`a, b \in F[x]`. Hint: can you find an expression for
 :math:`\deg(ab)` in terms of :math:`\deg(a)` and :math:`\deg(b)`?
@@ -192,10 +193,10 @@ Therefore, whenever we try to run our GCD algorithm, it always terminates
 immediately. In fact every single element of a field (apart from :math:`0`) is
 a "greatest common divisor" of any pair of elements (I put "greatest common
 divisor" in quotes here, because in this context it breaks down, and doesn't
-really mean anything any more). But we have shown something interesting: for
-any field, the *only option* for a euclidean function is a constant function,
-which means that no field can have any euclidean ring structure other than this
-rather uninteresting one.
+really mean anything any more). But we have established an interesting fact
+nonetheless: for any field, the *only option* for a euclidean function is a
+constant function, which means that no field can have any euclidean ring
+structure other than this rather uninteresting one.
 
 Summary
 -------
@@ -203,10 +204,10 @@ Summary
 The answer to the question "what is a euclidean ring" of course is the
 definition; there's no substitute for it, that is what a euclidean ring is.
 However it's often useful to have an intuitive understanding to go along with
-actual definition of what something is; allowing you to develop this intuition
-has been the aim of these last three chapters. My intuitive understanding of a
-euclidean ring is a ring which behaves "a bit like the integers", in the sense
-that
+actual definition of what something is, and allowing you to develop this
+intuition has been my aim in these last three chapters. My intuitive
+understanding of a euclidean ring is a ring which behaves "a bit like the
+integers", in the sense that
 
 * elements can be divided to give a quotient and a remainder,
 * any pair of elements has at least one greatest common divisor, in the sense
