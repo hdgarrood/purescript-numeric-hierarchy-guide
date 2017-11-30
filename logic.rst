@@ -172,7 +172,7 @@ same as this bad boy:
    (P \Rightarrow Q) \land (Q \Rightarrow P)
 
 In fact, the standard way of proving a statement of the form :math:`P
-\Leftrightarrow Q` is to first prove :math:`P \Rightarrow Q` and then to prove
+\Leftrightarrow Q` is to prove :math:`P \Rightarrow Q` or
 :math:`Q \Rightarrow P`.
 
 Sets
