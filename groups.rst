@@ -365,8 +365,18 @@ of group theory, it is conventional to use integers from :math:`1` up to
 :math:`n`; that is, we take :math:`X = \{ 1, 2, ... , n \}`. Clearly, then,
 this set has :math:`n` elements.
 
-This is a very important group so it has a name: it is called the *symmetric
-group of degree* :math:`n`. We denote this group by :math:`S_n`.
+The group of permutations on this set is very important, so it has a name: it
+is called the *symmetric group of degree* :math:`n`. We denote this group by
+:math:`S_n`.
+
+.. note::
+  Be careful not to confuse the set :math:`\{ 1, 2, ... , n\}` with the group
+  of permutations on that set, :math:`S_n`. Remember that the elements of
+  :math:`S_n` are *functions*, not numbers.
+
+**Exercise 3.4.** If :math:`n` is a positive integer, the product of all
+positive integers less than or equal to :math:`n` is called :math:`n`
+factorial, written :math:`n!`. Show that :math:`S_n` has :math:`n!` elements.
 
 As for checking the group laws for :math:`S_n`: we have already shown that
 :math:`(\mathrm{Maps}(X, X), \circ)` is a monoid, which means that we
