@@ -4,22 +4,19 @@ Sources for <https://a-guide-to-the-purescript-numeric-hierarchy.readthedocs.io/
 
 ## Status
 
-This guide is currently in a pre-alpha stage. In particular, it is very
-incomplete. If you would like to provide feedback at this stage I'd be very
-grateful to receive it.
-
-Please don't start sharing links to this publicly yet, though; I'd prefer to
-wait until it's more complete.
+This guide is currently in a beta stage.
 
 ReadTheDocs builds the HTML from what's in the `published` branch; the `master`
 branch will often be slightly ahead of `published`, containing material that
 I feel is not quite ready to be published yet.
 
 If you read through an earlier version of this guide and want to see what has
-changed in the meantime, GitHub has a [compare
-view](https://help.github.com/articles/comparing-commits-across-time/) which
-you can use. For example, [this page compares what's in the `published` branch now with what
-`published` looked like 2 days ago](https://github.com/hdgarrood/purescript-numeric-hierarchy-guide/compare/published@%7B2day%7D...published).
+changed in the meantime, there is a [changelog](changelog.md). There is also
+GitHub's [compare
+view](https://help.github.com/articles/comparing-commits-across-time/). For
+example, [this view compares what's in the `published` branch now with what
+`published` looked like 2 days
+ago](https://github.com/hdgarrood/purescript-numeric-hierarchy-guide/compare/published@%7B2day%7D...published).
 
 ## Contributions
 
@@ -27,8 +24,9 @@ I am very happy to receive feedback to help improve this guide - so please feel
 free to email me or open issues.
 
 However, please **do not send me pull requests**. I have decided to not accept
-contributions because I would like to retain full copyright ownership of this
-work, in case I ever want to publish it as a book or anything like that.
+contributions because it makes copyright issues simpler; I would like to retain
+full copyright ownership of this work, in case I ever want to publish it as a
+book or anything like that.
 
 ## License
 
