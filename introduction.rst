@@ -9,12 +9,12 @@ level.
 Status
 ------
 
-Beta. There are still quite a few chapters I want to write. In particular, the
-following are currently missing:
+Beta. There are still a few chapters and appendices I want to write. In
+particular, the following are currently missing:
 
 * Quaternions
-* General principles for formulating these mathematical structures as
-  PureScript type classes
+* General principles for formulating mathematical structures as PureScript type
+  classes
 * A glossary
 * A diagram with an overview of this hierarchy
 
