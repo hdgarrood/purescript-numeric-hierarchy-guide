@@ -55,9 +55,9 @@ I also encourage you to check this for yourself. Note that there are eight
 possibilities to consider, since we need to check that this works for any
 choice of :math:`P, Q,` and :math:`R`.
 
-The last set I will talk about before giving you the definition of a ring is
-:math:`\mathbb{Z}_3`, the set of integers modulo :math:`3`, which we saw in the
-previous chapter. Recall that :math:`\mathbb{Z}_3` has three elements:
+The last example I will talk about before giving you the definition of a ring
+is :math:`\mathbb{Z}_3`, the set of integers modulo :math:`3`, which we saw in
+the previous chapter. Recall that :math:`\mathbb{Z}_3` has three elements:
 
 .. math::
   \mathbb{Z}_3 = \{\overline{0}, \overline{1}, \overline{2}\}
@@ -83,9 +83,10 @@ Finally, multiplication distributes over addition in :math:`\mathbb{Z}_3` too;
 we sort of get this "for free" since we have defined multiplication and
 addition in terms of normal multiplication and addition in :math:`\mathbb{Z}`.
 
-More generally, :math:`\mathbb{Z}_m` is a ring for any positive integer
-:math:`m`, with multiplication defined in exactly the same way. So for example,
-in :math:`\mathbb{Z}_{12}`, we have :math:`\overline{5} \cdot \overline{6}
+Putting all this together, we see that :math:`\mathbb{Z}_3` is a ring. In fact,
+:math:`\mathbb{Z}_m` is a ring for any positive integer :math:`m`, with
+multiplication defined in exactly the same way. So for example, in
+:math:`\mathbb{Z}_{12}`, we have :math:`\overline{5} \cdot \overline{6}
 = \overline{30} = \overline{6}`.
 
 The definition
