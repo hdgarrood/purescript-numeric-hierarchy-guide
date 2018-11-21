@@ -4,8 +4,8 @@ Matrices
 Matrices are a source of many important examples of rings and fields, so we're
 going to get a bit more concrete in this chapter and talk about matrices for a
 bit. You may already be aware that matrices have many applications in
-computing; two examples that spring to my mind are 3D graphics and machine
-learning.
+computing; two examples that spring to my mind are computer graphics and
+machine learning.
 
 Vectors
 -------
@@ -63,7 +63,7 @@ how to find the inverse of an element.
   :math:`(\mathbb{R}^n, +)` is actually a group for any :math:`n`, not
   just :math:`n = 2`. We will spend the majority of this chapter working
   with :math:`\mathbb{R}^2`, but everything we're doing generalises very
-  naturally to different choices of :math:`n`.
+  naturally to larger choices of :math:`n`.
 
 **Exercise 5.3.** Show that scalar multiplication distributes over vector
 addition in :math:`\mathbb{R}^2`; that is, :math:`\forall \boldsymbol{x},

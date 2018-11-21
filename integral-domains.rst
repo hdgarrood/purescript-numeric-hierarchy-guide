@@ -54,7 +54,7 @@ like to be able to say whether the cancellation law holds in it.
 
 To do this we need a new definition. Let :math:`R` be any ring, and let
 :math:`a \in R` with :math:`a` nonzero. We say that :math:`a` is a
-**zero-divisor** if there exists a nonzero :math:`b \in R` such that either
+*zero-divisor* if there exists a nonzero :math:`b \in R` such that either
 :math:`ab = 0` or :math:`ba = 0`.
 
 .. note::
@@ -71,7 +71,7 @@ To do this we need a new definition. Let :math:`R` be any ring, and let
 **Exercise 6.2.** Let :math:`R` be any ring. Show that the multiplicative
 identity in :math:`R` cannot be a zero-divisor.
 
-Now we can introduce integral domains; an **integral domain** is a non-zero
+Now we can introduce integral domains; an *integral domain* is a non-zero
 commutative ring which has no zero-divisors. We can equivalently define an
 integral domain as a non-zero commutative ring :math:`R` in which for all
 :math:`a, b \in R`, if both :math:`a \neq 0` and :math:`b \neq 0` then their

@@ -12,9 +12,9 @@ are also ways of combining statements to make new statements, which again you
 are most likely familiar with already:
 
 * If you have two statements :math:`P` and :math:`Q`, you can make a new
-  statement :math:`P \text{ and } Q`, which is true if both :math:`P` and
+  statement ":math:`P \text{ and } Q`", which is true if both :math:`P` and
   :math:`Q` are true. This is often written as :math:`P \land Q`.
-* Similarly, you can also make a new statement :math:`P \text{ or } Q`, which
+* Similarly, you can also make a new statement ":math:`P \text{ or } Q`", which
   is true if at least one of :math:`P` and :math:`Q` are true. This is often
   written as :math:`P \lor Q`.
 
@@ -58,9 +58,10 @@ this isn't clear, it might help to compare it to an implementation of
 Logical equivalence
 -------------------
 
-We say that two statements are *logically equivalent* if they are either both
-true or both false. Here is a truth table for logical equivalence with some
-entries missing:
+We say that two statements are *logically equivalent* if they always have the
+same truth value as each other, that is, if they are always either both true or
+both false. Here is a truth table for logical equivalence with some entries
+missing:
 
 ========= ========= ===========================
 :math:`P` :math:`Q` :math:`P \Leftrightarrow Q`
@@ -96,21 +97,24 @@ and :math:`Q`:
 
 These two equivalences are called *De Morgan's laws.*
 
-**Exercise 1.4.** Persuade yourself that De Morgan's laws are correct.
-One way to do this is to write out a truth table.
+**Exercise 1.4.** Persuade yourself that De Morgan's laws hold. One way to do
+this is to write out a truth table.
 
 Logical implication
 -------------------
 
-We now consider statements of the form "if :math:`P`, then :math:`Q`". This way
-of connecting logical statements is called *logical implication.* Another way
-of saying the same thing is ":math:`P` *implies* :math:`Q`". The symbol for
-logical implication is an arrow: we can write the above statement as ":math:`P
-\Rightarrow Q`".
+We now consider statements of the form "if :math:`P`, then :math:`Q`", for
+example:
 
-:math:`P \Rightarrow Q` is a logical statement just like all of the others we
-have seen, and therefore it has a truth-value which depends on the truth-values
-of :math:`P` and :math:`Q`. Here is the truth table for logical implication:
+* if it is raining, then we will get wet,
+* if :math:`x` is even, then it can be divided by :math:`2` exactly,
+* if :math:`y` is even and :math:`z` is even, then :math:`y + z` is even.
+
+We represent this kind of statement by defining a new logical operator called
+*logical implication*, which we write as a rightwards-pointing arrow:
+:math:`\text{it is raining} \Rightarrow \text{we will get wet}`.
+
+The logical implication operator is defined as follows:
 
 ========= ========= =======================
 :math:`P` :math:`Q` :math:`P \Rightarrow Q`
@@ -121,10 +125,9 @@ F         T         T
 F         F         T
 ========= ========= =======================
 
-This might not match up exactly with your intuition: specifically, you might
-expect :math:`P \Rightarrow Q` to be false if :math:`P` is false. If this
-bothers you, try not to worry about it too much. We will later see that it is
-convenient to define logical implication in this way.
+That is, :math:`P \Rightarrow Q` is a logical statement just like all of the
+others we have seen, and it has a truth-value which depends on the truth-values
+of :math:`P` and :math:`Q`.
 
 **Exercise 1.5.** Persuade yourself, by using a truth table (or any other
 method that works for you), that :math:`P \Rightarrow Q` is always logically
@@ -140,16 +143,64 @@ For example, suppose we wanted to prove the statement
 .. math::
 
   x \text{ is even} \Rightarrow x^2 \text{ is even}.
-  
+
 We would start by letting :math:`x` be some arbitrary integer and assuming that
 it is even. Since :math:`x` is even, we can write :math:`x = 2m` for some
 integer :math:`m`. Then, :math:`x^2 = 4m^2` and therefore we have shown
 :math:`x^2` has :math:`4` as a factor, so it must also have :math:`2` as a
 factor, which means it must be even.
 
-**Exercise 1.6.** Persuade yourself that :math:`P
-\Rightarrow Q` is always logically equivalent to :math:`\neg Q \Rightarrow \neg
-P`.
+Converses
+---------
+
+If we have a statement which is a logical implication, for example :math:`x
+\text{ is even} \Rightarrow x \text{ can be divided by 2 exactly}`, there is
+another closely related statement called its *converse*. To find the converse
+of an implication statement, we simply swap the two operands. For example, the
+converse of the statement
+
+.. math::
+  x \text{ is even} \Rightarrow x \text{ can be divided by 2 exactly}
+
+is this:
+
+.. math::
+  x \text{ can be divided by 2 exactly} \Rightarrow x \text{ is even}
+
+Notice that both of the above statements are true. However, this is often not
+the case! If a statement is true, it is not safe to assume that its converse is
+also true. For example, consider the statement
+
+.. math::
+  y \text{ is even and } z \text{ is even} \Rightarrow y + z \text{ is even}
+
+The converse of this statement is
+
+.. math::
+  y + z \text{ is even} \Rightarrow y \text{ is even and } z \text{ is even}
+
+Notice that, while the first is true, the second is not. For instance, if
+we take :math:`y = z = 1`, then :math:`y + z` is even, but neither :math:`y`
+nor :math:`z` is.
+
+Contrapositives
+---------------
+
+If we have a statement which is a logical implication, for example
+:math:`\text{my pet is a cat} \Rightarrow \text{my pet is a mammal}`, there is
+another closely related statement called its *contrapositive*. To find the
+contrapositive of a logical implication statement, we swap the operands and
+negate them both. So, for example, the contrapositive of the statement
+:math:`\text{my pet is a cat} \Rightarrow \text{my pet is a mammal}` is the
+statement :math:`\text{my pet is not a mammal} \Rightarrow \text{my pet is not
+a cat}`.
+
+The first thing to notice is that any implication statement is always logically
+equivalent to its contrapositive.
+
+**Exercise 1.6.** Check this! Persuade yourself that :math:`P \Rightarrow Q` is
+always logically equivalent to :math:`\neg Q \Rightarrow \neg P`, perhaps with
+a truth table.
 
 This exercise suggests another way of proving statements of the form :math:`P
 \Rightarrow Q`, which is to instead assume that :math:`\neg Q` is true, and
@@ -218,7 +269,7 @@ Here are a few sets you may have come across already:
 * The set of *integers,* :math:`\{0, 1, -1, 2, -2, 3, -3, ...\}`. Like
   :math:`\mathbb{N}` but it also includes negative numbers. We have a special
   notation for this set too: :math:`\mathbb{Z}`, from the German *Zahlen,*
-  meaning "numbers".
+  which just means "numbers".
 
 * The set of *real numbers,* which is the kind of number you're probably most
   used to. :math:`0, 1, 37, \frac{1}{2}`, and :math:`\pi` are all examples of
@@ -248,8 +299,8 @@ If we let :math:`P(x)` represent the predicate ":math:`x` is even", then we can
 write the statement "2 is even" as :math:`P(2)`. Similarly we can
 write the statement "3 is even" as :math:`P(3)`. In each case we get a
 statement whose truth-value can depend on the specific value of :math:`x` which
-was chosen — in this case, the first statement is true but the second is
-false.
+was chosen — in this case, :math:`P(2)` would be true, and :math:`P(3)` would
+be false.
 
 If we have a predicate, we can make statements about the truth-values of a
 predicate over all the possible values it can take as arguments by using things
@@ -270,8 +321,9 @@ squared is greater than or equal to :math:`0`."
 The standard way of proving a statement like this is more or less what you
 might expect: we have to show that every element of the set satisfies the
 predicate. If the set is finite, we can do this by checking each element
-individually. However, we often deal with infinite sets, and anyway individual
-checking quickly gets very tedious for even fairly small sets.  Therefore, we
+individually. However, individual checking quickly gets very tedious for even
+fairly small sets. Additionally, we often deal with infinite sets, where
+exhaustively checking each element individually is not possible. Therefore, we
 will usually prove statements of this kind by constructing an argument which
 deals with every single element of the set *at the same time.* In fact, we have
 already seen an example of such a proof: the proof that :math:`x` being even

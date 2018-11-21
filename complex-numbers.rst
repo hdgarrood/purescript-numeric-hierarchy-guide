@@ -6,17 +6,21 @@ defined an addition operation which made :math:`(\mathbb{R}^2, +)` an abelian
 group. In this section we will come across a multiplication operation on
 :math:`\mathbb{R}^2` and we will see that with these two operations,
 :math:`\mathbb{R}^2` can be made into a field, which is called the field of
-**complex numbers**. When we are making use of the field structure we will
+*complex numbers*. When we are making use of the field structure we will
 usually write this field as :math:`\mathbb{C}` rather than
 :math:`\mathbb{R}^2`.
 
 Complex numbers have a variety of applications, including in geometry, for e.g.
-representing figures in two dimensions, or representing projections of
-three-dimensional objects onto a plane, for modelling behaviour of electrical
+representing figures in two dimensions, for modelling behaviour of electrical
 signals, and for analysing the behaviour of systems which can be modelled using
 differential equations, such as how populations of different species in a food
 web change over time, how heat flows through an object, or how mechanical
-systems like suspension in a car will behave.
+systems like suspension in a car will behave. They also function as useful
+tools in many other areas of mathematics. For instance, they play a major role
+in the proof that quintic equations — that is, equations of the form
+:math:`ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0` — cannot be solved in general,
+as well as offering some nifty tricks to perform otherwise difficult
+integrations of real-valued functions.
 
 First, instead of writing elements of :math:`\mathbb{R}^2` in the usual way,
 i.e. :math:`(a, b)`, we will write them as :math:`a + bi`, where :math:`a` and
@@ -41,8 +45,8 @@ direction) and replacing :math:`i^2` with :math:`-1`, we can write this as
   :math:`\mathbb{C}` is a field before even defining its multiplication
   operation. I hope you can forgive me for this.
 
-Notice that the subset of :math:`\mathbb{C}` given by the complex numbers with
-an imaginary part of :math:`0` behaves in exactly the same way as
+Notice that the subset of :math:`\mathbb{C}` given by the complex numbers which
+have an imaginary part of :math:`0` behaves in exactly the same way as
 :math:`\mathbb{R}`; because of this, we can consider :math:`\mathbb{R}` as a
 subset of :math:`\mathbb{C}`. In the same vein we will describe elements of
 :math:`\mathbb{C}` which have an imaginary part of :math:`0` as "real".
@@ -54,19 +58,20 @@ is, for :math:`a \in R`,
 .. math::
   (a+0i)(c+di) = (ac + 0d) + (ad + 0c)i = (ac) + (ad)i
 
-Establishing that :math:`\mathbb{C}` is a (commutative) ring with respect to
-these addition and multiplication operations is a little tedious, so I won't
-set it as an 'official' exercise, but you may find it worth doing anyway.
+Establishing that :math:`\mathbb{C}` is a ring (in fact, a commutative ring)
+with respect to these addition and multiplication operations is a little
+tedious, so I won't set it as an 'official' exercise, but you may find it worth
+doing anyway.
 
-However, establishing that :math:`\mathbb{C}` is a field given that it is a
-commutative ring — that is, showing that all nonzero elements have
-multiplicative inverses — is more interesting.
+However, establishing that :math:`\mathbb{C}` is a field — in particular,
+showing that all nonzero elements have multiplicative inverses — is more
+interesting.
 
 To find the multiplicative inverse of an arbitrary complex number, we use an
-operation called **conjugation**. The **conjugate** of a complex number is
-obtained by negating the imaginary part, i.e. the conjugate of :math:`a + bi`
-is :math:`a - bi`. The first thing to notice is that multiplying a complex
-number by its conjugate always yields a real number:
+operation called *conjugation*. The *conjugate* of a complex number is obtained
+by negating the imaginary part, i.e. the conjugate of :math:`a + bi` is
+:math:`a - bi`. The first thing to notice is that multiplying a complex number
+by its conjugate always yields a real number:
 
 .. math::
   (a + bi)(a - bi)

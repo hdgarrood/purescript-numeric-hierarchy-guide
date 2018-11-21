@@ -2,18 +2,18 @@ The Euclidean Algorithm
 =======================
 
 We now return to the familiar world of the integers, where we will learn (or
-perhaps remind ourselves) about what the **greatest common divisor** of two
+perhaps remind ourselves) about what the *greatest common divisor* of two
 integers is, and about an algorithm which allows us to compute them easily, and
 why it works. This will form part of the motivation for the idea of a
-**euclidean ring**, a structure which generalises the integers.
+*euclidean ring*, a structure which generalises the integers.
 
 Integer division
 ----------------
 
-Let :math:`a, b \in \mathbb{Z}`. We say that :math:`a` **divides** :math:`b` if
+Let :math:`a, b \in \mathbb{Z}`. We say that :math:`a` *divides* :math:`b` if
 there exists some :math:`q \in \mathbb{Z}` such that :math:`aq = b`. Another
 way of understanding this is that :math:`b` can be divided exactly by :math:`a`
-to yield :math:`q`. Symbolically, we write :math:`a \mid b`.
+to yield :math:`q`. In symbols, this is written :math:`a \mid b`.
 
 For example, :math:`5 \mid 20`, and also :math:`4 \mid 20`.
 
@@ -21,8 +21,8 @@ Of course, we often have to deal with the less happy situation where integers
 don't divide exactly into each other. All hope is not lost, though: if we have
 two integers :math:`a, b`, with :math:`b > 0`, then there always exists a pair
 of integers :math:`q` and :math:`r` such that :math:`a = qb + r`, and :math:`0
-\leq r < b`. We usually call :math:`q` the **quotient** and we call :math:`r`
-the **remainder**. You probably know already that a remainder of :math:`0`
+\leq r < b`. We usually call :math:`q` the *quotient* and we call :math:`r`
+the *remainder*. You probably know already that a remainder of :math:`0`
 indicates that the pair of integers we are dealing with do divide into each
 other exactly.
 
@@ -30,9 +30,9 @@ Greatest common divisors
 ------------------------
 
 If :math:`d` divides :math:`a`, and :math:`d` also divides :math:`b`, we say
-that :math:`d` is a **common divisor** of :math:`a` and :math:`b`. If :math:`d`
+that :math:`d` is a *common divisor* of :math:`a` and :math:`b`. If :math:`d`
 is greater than any other common divisor of :math:`a` and :math:`b`, we say
-that :math:`d` is the **greatest common divisor** of :math:`a` and :math:`b`.
+that :math:`d` is the *greatest common divisor* of :math:`a` and :math:`b`.
 This chapter is mostly concerned with finding the greatest common divisor of
 any pair of integers; we can do this by using an algorithm called the Euclidean
 Algorithm.

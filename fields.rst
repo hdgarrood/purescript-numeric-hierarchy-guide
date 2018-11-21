@@ -2,18 +2,17 @@ Fields
 ======
 
 We are finally ready to talk about one of the most important types of rings,
-namely **fields**.
+namely *fields*.
 
 Let :math:`R` be a ring, and let :math:`x \in R`. We say that :math:`x` is a
-**unit** if there exists some :math:`y \in R` such that :math:`xy = yx = 1`,
+*unit* if there exists some :math:`y \in R` such that :math:`xy = yx = 1`,
 that is, if :math:`x` has a multiplicative inverse. For example, in any ring,
 :math:`1` is always a unit, and :math:`0` is never a unit.
 
-Then, a **field** is defined as a commutative ring in which every nonzero
-element is a unit. We can equivalently say that a field is a commutative ring
-for which the nonzero elements form a group under multiplication. We usually
-use the notation :math:`x^{-1}` for the multiplicative inverse of :math:`x` in
-a field.
+Then, a *field* is defined as a commutative ring in which every nonzero element
+is a unit. We can equivalently say that a field is a commutative ring for which
+the nonzero elements form a group under multiplication. We usually use the
+notation :math:`x^{-1}` for the multiplicative inverse of :math:`x` in a field.
 
 Here are some examples of fields which we have already seen:
 
@@ -35,9 +34,9 @@ Here are some non-examples:
   multiplicative inverse. We can check this exhaustively:
 
   .. math::
-    \overline{1} * \overline{2} = \overline{2} \\
-    \overline{2} * \overline{2} = \overline{0} \\
-    \overline{3} * \overline{2} = \overline{2}
+    \overline{1} \cdot \overline{2} = \overline{2} \\
+    \overline{2} \cdot \overline{2} = \overline{0} \\
+    \overline{3} \cdot \overline{2} = \overline{2}
 
   None of these are equal to :math:`\overline{1}`, so we can conclude that none
   of them is a multiplicative inverse of :math:`\overline{2}`.
@@ -48,8 +47,8 @@ Here are some non-examples:
   inverses.
 
 We also have a name for rings in which all nonzero elements are units but
-multiplication is not necessarily commutative: these are called **division
-rings**, or sometimes **skew fields**. It just happens that most of the
+multiplication is not necessarily commutative: these are called *division
+rings*, or sometimes *skew fields*. It just happens that most of the
 interesting examples of division rings are also fields, so we tend to spend
 more time thinking about fields.  There is, however, one important example of a
 division ring which is not a field, which we will see later on.
@@ -65,20 +64,20 @@ groups, so if you need a refresher now might be a good time to revisit it.
 Subsets
 ^^^^^^^
 
-Let :math:`A` and :math:`B` be sets. We say that :math:`A` is a **subset** of
+Let :math:`A` and :math:`B` be sets. We say that :math:`A` is a *subset* of
 :math:`B` if :math:`x \in A \Rightarrow x \in B`, that is, every element of
 :math:`A` is also an element of `B`. Symbolically, we write :math:`A \subseteq
 B`.
 
 One consequence of this definition is that every set is a subset of itself. If
-we want to rule out this case, we would say that :math:`A` is a **proper
-subset** of :math:`B`, and this is written :math:`A \subset B`.
+we want to rule out this case, we would say that :math:`A` is a *proper subset*
+of :math:`B`, and this is written :math:`A \subset B`.
 
 Images of functions
 ^^^^^^^^^^^^^^^^^^^
 
 We call the set of elements that can be produced as a result of applying
-a function :math:`f` to an element of its domain the **image** of :math:`f`.
+a function :math:`f` to an element of its domain the *image* of :math:`f`.
 Note that this set is necessarily a subset of the codomain; in fact, another
 way of defining a surjective function is one whose image is equal to its
 codomain.

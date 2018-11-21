@@ -29,8 +29,8 @@ Here are a few more rules about how multiplying integers works:
 
 Now, instead of integers, we will consider a different set: the set of
 truth-values :math:`\{T, F\}`. This set corresponds to the ``Boolean`` type in
-PureScript. Here are some rules for how the logical and :math:`\land` operation
-works on truth-values:
+PureScript. Here are some rules for how the "logical and" operation
+:math:`(\land)` works on truth-values:
 
 * If we apply the :math:`\land` operation to two truth-values, we always get
   another truth-value.
@@ -41,8 +41,10 @@ works on truth-values:
   :math:`P`. If it's not obvious what I mean by :math:`P \land T`, it means the
   same thing as the PureScript code ``p && true``.
 
-Hopefully you can see the pattern by now. The general definition of a monoid is
-as follows:
+Hopefully a pattern will be starting to emerge: in each case, we have a set,
+an operation which gives us a way of combining two elements of that set to
+produce another element of the same set, and some rules that the operation
+should satisfy. The general definition of a monoid is as follows:
 
 A monoid is a set :math:`M`, together with an operation :math:`*`, such that
 the following laws hold:
@@ -51,12 +53,18 @@ the following laws hold:
 2. *Associativity.* :math:`\forall x, y, z \in M.\; (x * y) * z = x * (y * z)`.
 3. *Identity.* :math:`\exists e \in M.\; \forall x \in M.\; e * x = x * e = x`.
 
-Hopefully you can see that the operation :math:`*` corresponds to ``append`` in
-PureScript, and that the identity element (conventionally written :math:`e`)
-corresponds to ``mempty`` in PureScript.
+Looking back to the examples above, we have the monoids of:
 
-So far, we have seen three examples of monoids: integers under addition and
-multiplication, and truth values under :math:`\land`.
+* *the integers under addition*, where the set is :math:`\mathbb{Z}`, the
+  operation is addition, and the identity element is :math:`0`,
+* *the integers under multiplication*, where the set is :math:`\mathbb{Z}`, the
+  operation is multiplication, and the identity element is :math:`1`,
+* *truth values under logical and*, where the set is :math:`\{T, F\}`, the
+  operation is :math:`\land`, and the identity element is :math:`T`.
+
+The operation :math:`*` corresponds to ``append`` in PureScript, and that the
+identity element (conventionally written :math:`e`) corresponds to ``mempty``
+in PureScript.
 
 We will now look at a few non-examples of monoids and talk about why they fail
 to be monoids.
@@ -140,7 +148,7 @@ Let :math:`X` be any set, and consider the set of functions from :math:`X` to
 composition :math:`\circ` as our operation, we have a monoid
 :math:`(\mathrm{Maps}(X, X), \circ)`.  Let's check this:
 
-1. *Closure.* The composition of two functions from :math:`X` to :math:`X` is
+1. *Closure.* The composite of two functions from :math:`X` to :math:`X` is
    itself a function from :math:`X` to :math:`X`, so closure is satisfied.
 2. *Associativity.* Function composition is associative, so associativity is
    satisfied.
@@ -153,49 +161,43 @@ set :math:`X` to be the set :math:`\{A, B\}` which contains just two elements.
 (The elements :math:`A` and :math:`B` don't really mean anything here, they're
 just symbols.) Then there are four functions from :math:`X` to :math:`X`:
 
-.. math::
-  e(x) = x
+* The identity function :math:`e(x) = x`,
+* The constant functions :math:`f_A` and :math:`f_B`, which ignore their
+  argument and always return :math:`A` and :math:`B` respectively, and
+* The swapping function :math:`f_{swap}`, which sends :math:`A` to :math:`B`,
+  and :math:`B` to :math:`A`.
 
-  f_1(x) = A
-
-  f_2(x) = B
-
-  f_3(x) = \begin{cases}
-              B & \mathrm{if}\; x = A \\
-              A & \mathrm{if}\; x = B
-           \end{cases}
-
-If this notation isn't clear to you, here's the PureScript equivalent::
+In PureScript::
 
   e :: X -> X
   e x = x
-    -- or simply e = id
+    -- or simply e = identity
 
-  f1 :: X -> X
-  f1 _ = A
+  fA :: X -> X
+  fA _ = A
     -- or simply f1 = const A
 
-  f2 :: X -> X
-  f2 _ = B
+  fB :: X -> X
+  fB _ = B
     -- or simply f2 = const B
 
-  f3 :: X -> X
-  f3 A = B
-  f3 B = A
+  fSwap :: X -> X
+  fSwap A = B
+  fSwap B = A
 
 Here are a few examples of how the monoid operation works in this monoid:
 
 .. math::
-  f_1 \circ f_2 = f_1
+  f_A \circ f_B = f_A
 
-  f_2 \circ f_3 = f_2
+  f_B \circ f_{swap} = f_B
 
-  f_3 \circ f_3 = e
+  f_{swap} \circ f_{swap} = e
 
 (check that you agree).
 
-This monoid is implemented in PureScript in the ``purescript-monoid`` library,
-via the ``Endo`` newtype.
+This monoid is implemented in PureScript in the module ``Data.Monoid.Endo``,
+which is part of the ``purescript-prelude`` library.
 
 We now move on to the last example of a monoid in this chapter:
 
@@ -216,6 +218,6 @@ argument, and then combines the results using the monoid operation :math:`*`
 from the monoid :math:`M`.  Prove that :math:`(\mathrm{Maps}(X, M), \star)` is
 a monoid; what is the identity element?
 
-The monoid in this exercise is *also* implemented in PureScript in the
-``purescript-monoid`` library; in fact it is the default ``Monoid`` instance
-for functions, written as ``Monoid b => Monoid (a -> b)``.
+The monoid in this exercise is *also* implemented in PureScript's ``Prelude``;
+in fact it is the default ``Monoid`` instance for functions, written as
+``Monoid b => Monoid (a -> b)``.

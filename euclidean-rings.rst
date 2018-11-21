@@ -7,7 +7,7 @@ encountered a new example of a ring, namely polynomials, and noticed that they
 both support a very similar kind of division.
 
 In this chapter we will see how to generalise the Euclidean Algorithm and
-discuss the resulting structure, which is called a **euclidean ring**.
+discuss the resulting structure, which is called a *euclidean ring*.
 
 Divisors, again
 ---------------
@@ -22,13 +22,13 @@ some :math:`q \in R` such that :math:`aq = b`.
 In fact it's the exact same definition except that we just replace
 :math:`\mathbb{Z}` with :math:`R`. The definition of "common divisors" also
 immediately generalises with no extra effort required. However, it's less
-obvious how to define a *greatest* common divisor, since we might not have a
-good way of ordering elements of an arbitrary integral domain. We address this
-as follows:
+obvious how to define a *greatest* common divisor, since we might not be able
+to say whether whether an element of an arbitrary integral domain is greater
+than some other element. We address this as follows:
 
 Let :math:`a, b, d \in R` and suppose :math:`d \mid a` and also :math:`d \mid
 b`, that is, :math:`d` is a common divisor of :math:`a` and :math:`b`. We say
-that :math:`d` is a **greatest common divisor** of :math:`a` and :math:`b` if
+that :math:`d` is a *greatest common divisor* of :math:`a` and :math:`b` if
 for any other common divisor :math:`d'` of :math:`a` and :math:`b`, we have
 that :math:`d' \mid d`.
 
@@ -61,7 +61,7 @@ same proof as we did in the case of :math:`\mathbb{Z}`!
 However, we can't generalise the second idea if all we have is an integral
 domain — we need something a little stronger.
 
-Let :math:`R` be an integral domain. A **euclidean function** is a function
+Let :math:`R` be an integral domain. A *euclidean function* is a function
 :math:`f : R \setminus \{ 0 \} \rightarrow \mathbb{N}` satisfying:
 
 * For :math:`a` and :math:`b` in :math:`R`, with :math:`b \neq 0`, there exist
@@ -70,11 +70,11 @@ Let :math:`R` be an integral domain. A **euclidean function** is a function
 * For all nonzero :math:`a` and :math:`b` in :math:`R`, we have :math:`f(a)
   \leq f(ab)`.
 
-A **euclidean ring**, or **euclidean domain**, is then defined as an integral
+A *euclidean ring*, or *euclidean domain*, is then defined as an integral
 domain which can be endowed with a euclidean function.
 
 .. note::
-  On notation: if :math:`A` and :math:`B` are sets then their **difference** is
+  On notation: if :math:`A` and :math:`B` are sets then their *difference* is
   defined as
 
   .. math::
@@ -113,7 +113,7 @@ This is almost in the right form for us to show that :math:`\mathbb{Z}` is a
 euclidean ring, but not quite. In particular we need to be able to deal any
 nonzero :math:`b`, not just positive :math:`b`.
 
-We can address this with the **absolute value function**. For any :math:`x \in
+We can address this with the *absolute value function*. For any :math:`x \in
 \mathbb{R}`, the absolute value of :math:`x` is defined as:
 
 .. math::

@@ -1,7 +1,7 @@
 Rings
 =====
 
-Congratulations for getting this far — we are finally ready to introduce rings!
+Congratulations on getting this far — we are finally ready to introduce rings!
 
 I will begin by reminding you of some properties that the real numbers have.
 
@@ -51,8 +51,8 @@ Thirdly, :math:`\land` distributes over :math:`\oplus`; that is, for all
 
   (P \oplus Q) \land R = (P \land R) \oplus (Q \land R)
 
-I also encourage you to check this yourself if you want to. Note that there are
-eight possibilities to consider, since we need to check that this works for any
+I also encourage you to check this for yourself. Note that there are eight
+possibilities to consider, since we need to check that this works for any
 choice of :math:`P, Q,` and :math:`R`.
 
 The last set I will talk about before giving you the definition of a ring is
@@ -85,14 +85,14 @@ addition in terms of normal multiplication and addition in :math:`\mathbb{Z}`.
 
 More generally, :math:`\mathbb{Z}_m` is a ring for any positive integer
 :math:`m`, with multiplication defined in exactly the same way. So for example,
-in :math:`\mathbb{Z}_{12}`, the product :math:`\overline{5} \cdot \overline{6}
+in :math:`\mathbb{Z}_{12}`, we have :math:`\overline{5} \cdot \overline{6}
 = \overline{30} = \overline{6}`.
 
 The definition
 --------------
 
 Now that you have seen some examples, I will give you the definition of a ring.
-A ring is a set :math:`R` equipped with two binary operations :math:`+` and
+A *ring* is a set :math:`R` equipped with two binary operations :math:`+` and
 :math:`\cdot`, called "addition" and "multiplication" respectively, such that
 the three following laws hold:
 
@@ -110,8 +110,11 @@ From now on I will generally omit the :math:`\cdot` symbol and represent
 multiplication by writing two symbols next to each other; that is, I will write
 :math:`xy` to mean :math:`x \cdot y`.
 
-The additive identity is written as :math:`0_R` or just :math:`0` when it's
-clear from context which ring :math:`R` we are talking about. Similarly, the
+We call the the identity element of the group :math:`(R, +)` the *additive
+identity* of the ring :math:`R`. The additive identity is written as
+:math:`0_R` or just :math:`0` when it's clear from context which ring :math:`R`
+we are talking about. Similarly, we call the identity element of the monoid
+:math:`(R, \cdot)` the *multiplicative identity* of the ring :math:`R`. The
 multiplicative identity is written as :math:`1_R` or simply :math:`1` when it's
 clear which ring we are using.
 
@@ -119,16 +122,17 @@ Since :math:`R` forms a group under addition, every element :math:`x \in R` has
 an additive inverse, which we will write :math:`-x`. We also write :math:`x -
 y` as a shorthand for :math:`x + (-y)`.
 
-An important thing to note is that in an arbitrary ring, multiplication need
-not be commutative! A ring in which the multiplication operation is commutative
-is called a *commutative ring.* So far, all the rings we have seen have
+An important thing to note is that in a ring, multiplication need not be
+commutative! A ring in which the multiplication operation is commutative is
+called a *commutative ring.* So far, all the rings we have seen have
 commutative, but we will soon see some examples of non-commutative rings.
 
 One last thing that I should mention quickly: just as there is a trivial monoid
 and a trivial group, there is a trivial ring with just one element, usually
 written :math:`\{0\}`. This ring is called the **zero ring**. It is not very
 interesting so we often rule it out by saying we a dealing with a "non-zero
-ring"; this just means any ring but the zero ring.
+ring"; this phrase is nothing more than a shorthand for "any ring but the zero
+ring".
 
 Properties of rings
 -------------------
@@ -178,7 +182,7 @@ Having multiplication by :math:`0` always produce :math:`0` is a useful
 property, though, so to make sure it still holds, we add it as an extra law. We
 then obtain the following:
 
-A **semiring** is a set :math:`R` equipped with two binary operations :math:`+`
+A *semiring* is a set :math:`R` equipped with two binary operations :math:`+`
 and :math:`\cdot`, called "addition" and "multiplication" respectively, such
 that the three following laws hold:
 

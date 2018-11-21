@@ -3,9 +3,9 @@ Polynomials
 
 It is time to meet yet another example of a ring.
 
-A **polynomial** is a finite collection of **terms**, all added together, where
-each term is formed of a product of two things: the **coefficient**, and the
-**variable**, usually :math:`x`, raised to a non-negative integer power.  For
+A *polynomial* is a finite collection of *terms*, all added together, where
+each term is formed of a product of two things: the *coefficient*, and the
+*variable*, usually :math:`x`, raised to a non-negative integer power.  For
 example, the following are all polynomials:
 
 .. math::
@@ -19,15 +19,15 @@ Looking again at the example :math:`5x^2 + 2x + 4,` we see that it has three
 terms: namely, :math:`5x^2, 2x,` and :math:`4`. The coefficients of these terms
 are :math:`5, 2,` and :math:`4` respectively.
 
-The **degree** of a polynomial is the highest power of :math:`x` appearing. So
+The *degree* of a polynomial is the highest power of :math:`x` appearing. So
 for example, the degree of :math:`5x^2 + 2x + 4` is :math:`2`, and the degree
-of :math:`x^3 + 1` is :math:`3`. Notationally, we write :math:`\deg(p)` for the
-degree of a polynomial :math:`p`, so e.g. :math:`\deg(5x^2 + 2x + 4) = 2`.
+of :math:`x^3 + 1` is :math:`3`. We write :math:`\deg(p)` for the degree of a
+polynomial :math:`p`, so e.g. :math:`\deg(5x^2 + 2x + 4) = 2`.
 
 The coefficient of the term with the highest power is also important and
-therefore has a special name: it is called the **leading coefficient**. For
+therefore has a special name: it is called the *leading coefficient*. For
 example, the leading coefficient of the polynomial :math:`5x^2 + 2x + 4` is
-:math:`5`. A **monic** polynomial is a polynomial whose leading coefficient is
+:math:`5`. A *monic* polynomial is a polynomial whose leading coefficient is
 :math:`1`.
 
 Polynomial addition and multiplication both work how you would expect. To add
@@ -100,13 +100,13 @@ Consider the ring of polynomials with coefficients in some integral domain
 monic. Then, there exists :math:`q, r \in R[x]` such that :math:`a = qb + r`,
 and either :math:`\deg(r) < \deg(b)`, or :math:`r = 0`.
 
-Depending on your philosophy and outlook, it might or might not be a problem
-that the following proof of this result is non-constructive, i.e. it proves
-that :math:`q` and :math:`r` exist, but it doesn't give you an algorithm for
-finding them. It's also a little trickier than many of the proofs we've seen so
-far, so don't worry if you can't quite get your head around it straight away.
-We won't go on to do anything that requires understanding this proof; we really
-just want to make sure we're aware of the result.
+Depending on your philosophy, it might or might not be a problem that the
+following proof of this result is non-constructive, i.e. it proves that
+:math:`q` and :math:`r` exist, but it doesn't give you an algorithm for finding
+them. It's also a little trickier than many of the proofs we've seen so far, so
+don't worry if you can't quite get your head around it straight away.  We won't
+go on to do anything that requires understanding this proof; we really just
+want to make sure we're aware of the result.
 
 Anyway, to prove this result, we start by choosing a polynomial :math:`q` which
 ensures that the degree of :math:`a - qb` is as small as possible. Note that it
@@ -163,4 +163,4 @@ either :math:`\deg(r) < \deg(b)`, or :math:`r = 0`.
 The important thing to notice is that this theorem bears a strong resemblance
 to the theorem regarding integer division which we saw in the previous chapter.
 So now we might ask: is there a generalisation which can unify these two
-concepts? The answer is of course yes: it's called a **euclidean ring**.
+concepts? The answer is of course yes: it's called a *euclidean ring*.
