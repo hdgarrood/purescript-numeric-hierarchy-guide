@@ -19,5 +19,6 @@ Table of contents
    euclidean-algorithm
    polynomials
    euclidean-rings
+   quaternions
 
    appendix/index
