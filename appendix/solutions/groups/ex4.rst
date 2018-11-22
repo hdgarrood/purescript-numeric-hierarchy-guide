@@ -1,46 +1,20 @@
 Exercise 3.4
 ============
 
-Let :math:`X = \{ 1, 2, ... , n \}`, and let :math:`f : X \to X` be bijective.
-We wish to determine how many possibilities there are for :math:`f`. To
-determine a particular choice of :math:`f`, we need to say what it does to each
-element of :math:`X`:
+Part a)
+-------
 
-.. math::
-  f(1) = \, ???
+Essentially, we are looking for an integer that solves :math:`3 + x = 2`, which
+is clearly :math:`x = -1`. So the answer is :math:`\overline{-1}`. However, it
+is customary to use a number between :math:`0` and :math:`m - 1` as the
+representative for an element of :math:`\mathbb{Z}_m`. Remember that
+:math:`\overline{x} = \overline{x + 12}`, so in particular :math:`\overline{-1}
+= \overline{11}`. So we write the answer as :math:`\overline{11}`.
 
-  f(2) = \, ???
+Part b)
+-------
 
-  ...
+The procedure is similar to part a); we are looking for an integer that solves
+:math:`5 + x = 0`, which is clearly :math:`x = -5`, giving us the answer
+:math:`\overline{-5} = \overline{7}`.
 
-  f(n) = \, ???
-
-We have :math:`n` choices to make: on the right-hand side of each of the above
-:math:`n` equations, we need to choose an element of :math:`X`. However,
-remember that the function we end up with needs to be *bijective*. That means
-that each element of :math:`X` needs to appear on the right-hand side of
-exactly one of these equations.
-
-Suppose we decide to make a choice for :math:`f(1)` first. We may choose any
-element of :math:`X`, so we have :math:`n` options.
-
-Now, we decide to make a choice for :math:`f(2)`. We may choose any element of
-:math:`X` other than the element we chose for :math:`f(1)`, which means we have
-:math:`n-1` choices.
-
-For :math:`f(3)`, we may choose any element of :math:`X` other than the
-elements we chose for :math:`f(1)` and :math:`f(2)`, which means we have
-:math:`n-3` choices.
-
-We continue this process until we reach the end of our list of equations, at
-:math:`f(n)`. At this point there will only be one element of :math:`X`
-remaining which we haven't yet picked, so we have no freedom at all here: we
-have to choose that element for :math:`f(n)`.
-
-In a process which involves making a sequence of choices, the total number of
-end possibilities is equal to the product of the number of possibilities for
-each choice. Therefore, the number of possibilities for an arbitrary
-permutation :math:`f` of :math:`X` is
-
-.. math::
-  n \times (n-1) \times (n-2) \; \times \; ... \; \times \; 2 \times 1 = n!

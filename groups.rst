@@ -61,6 +61,9 @@ If you're wondering why I'm using different letters now, it's nothing more than
 a convention: people generally use :math:`G` to refer to some arbitrary group,
 and lowercase letters starting from :math:`g` to refer to elements of a group.
 
+We often omit the :math:`*` symbol; you might see people expressing the above
+property as :math:`\forall g \in G.\; \exists h \in G.\; gh = hg = e`.
+
 :math:`(\mathbb{Z}, +)` is the first example of a group we will consider. In
 this group, the inverse of :math:`1` is :math:`-1`, the inverse of :math:`-5`
 is :math:`5`, and in general the inverse of :math:`x` is :math:`-x`.
@@ -124,6 +127,9 @@ often write the inverse of :math:`g` as :math:`g^{-1}`.
 
 **Exercise 3.2.** In an arbitrary group, what is the inverse of the identity
 element?
+
+**Exercise 3.3.** Let :math:`G` be a group, and let :math:`g, h \in G`. Show
+that :math:`g^{-1} h^{-1} = (hg)^{-1}`.
 
 Modular arithmetic
 ------------------
@@ -227,10 +233,10 @@ we have a finite group. In particular, :math:`\overline{0}` is the identity
 element. Again, I won't prove this right now for the sake of expediency,
 although I might put a proof in an appendix later.
 
-**Exercise 3.3.a.** Which element of :math:`\mathbb{Z}_{12}` solves the
+**Exercise 3.4.a.** Which element of :math:`\mathbb{Z}_{12}` solves the
 equation :math:`\overline{3} + \overline{x} = \overline{2}`?
 
-**Exercise 3.3.b.** What is the additive inverse of :math:`\overline{5}` in
+**Exercise 3.4.b.** What is the additive inverse of :math:`\overline{5}` in
 :math:`\mathbb{Z}_{12}`? That is, which element of :math:`\mathbb{Z}_{12}`
 solves the equation :math:`\overline{5} + \overline{x} = \overline{0}`?
 
@@ -374,7 +380,7 @@ is called the *symmetric group of degree* :math:`n`. We denote this group by
   of permutations on that set, :math:`S_n`. Remember that the elements of
   :math:`S_n` are *functions*, not numbers.
 
-**Exercise 3.4.** If :math:`n` is a positive integer, the product of all
+**Exercise 3.5.** If :math:`n` is a positive integer, the product of all
 positive integers less than or equal to :math:`n` is called :math:`n`
 factorial, written :math:`n!`. Show that :math:`S_n` has :math:`n!` elements.
 
