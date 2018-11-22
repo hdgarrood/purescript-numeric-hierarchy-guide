@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'A guide to the PureScript numeric hierarchy'
-copyright = '2017, Harry Garrood'
+copyright = '2017-2018, Harry Garrood'
 author = 'Harry Garrood'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -224,7 +224,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'AguidetothePureScriptnumerichierarchy.tex', 'A guide to the PureScript numeric hierarchy Documentation',
+    (master_doc, 'ps-numeric-hierarchy.tex', 'A guide to the PureScript numeric hierarchy',
      'Harry Garrood', 'manual'),
 ]
 
