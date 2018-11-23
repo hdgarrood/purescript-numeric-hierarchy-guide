@@ -12,8 +12,6 @@ Status
 Beta. There are still a few chapters and appendices I want to write. In
 particular, the following are currently missing:
 
-* General principles for formulating mathematical structures as PureScript type
-  classes
 * A glossary
 * A diagram with an overview of this hierarchy
 
