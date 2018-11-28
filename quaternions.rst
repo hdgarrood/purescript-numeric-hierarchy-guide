@@ -175,6 +175,6 @@ might be a good place to start.
 I also highly recommend the YouTube video `What are quaternions, and how do you visualize them? A story of four dimensions <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`_
 by `3Blue1Brown <https://youtube.com/3Blue1Brown>`_.
 
-There is also a PureScript library `purescript-quaternions <https://pursuit.purescript.org/packages/purescript-quaternions>`_,
+There is also my PureScript library `purescript-quaternions <https://pursuit.purescript.org/packages/purescript-quaternions>`_,
 which provides a Quaternion type, instances, and various operations, as well as
 utilities for using quaternions to represent 3D rotations.
