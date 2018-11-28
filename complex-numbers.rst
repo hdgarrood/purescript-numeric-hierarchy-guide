@@ -53,7 +53,7 @@ subset of :math:`\mathbb{C}`. In the same vein we will describe elements of
 
 Another useful thing to notice is that to multiply a real number by a complex
 number, you simply multiply the real and imaginary parts by that number. That
-is, for :math:`a \in R`,
+is, for :math:`a \in \mathbb{R}`,
 
 .. math::
   (a+0i)(c+di) = (ac + 0d) + (ad + 0c)i = (ac) + (ad)i
