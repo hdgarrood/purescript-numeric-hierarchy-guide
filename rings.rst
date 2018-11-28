@@ -199,7 +199,19 @@ that the three following laws hold:
 
 4. Anything multiplied by :math:`0` is :math:`0`.
 
-I won't spend much time talking about semirings in this guide. One useful fact
-about semirings is that the natural numbers do form a semiring, although they
-do not form a ring; recall that :math:`(\mathbb{N}, +)` is a commutative monoid
-but not a group.
+
+I won't spend too much time talking about semirings in this guide, as most of
+the number systems you're likely to be dealing with as a programmer have more
+structure. I'll just give a couple of examples before we move on:
+
+The natural example of a semiring is the natural numbers :math:`\mathbb{N}`;
+recall that :math:`(\mathbb{N}, +)` is a commutative monoid but not a group.
+Therefore, :math:`\mathbb{N}` is a semiring but not a ring.
+
+The simplest semiring which is not a ring is called the *Boolean semiring*. It
+has just two elements, :math:`0` and :math:`1`, and it is defined by the
+equation :math:`1 + 1 = 1`. Note that we don't need to specify the results of
+adding or multiplying any other elements, because the semiring laws already
+tell us what they will be. The Boolean semiring is different from the ring
+:math:`\mathrm{Bool}` above; recall that in :math:`\mathrm{Bool}`, we have
+:math:`1 + 1 = 0`.
