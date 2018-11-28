@@ -6,15 +6,6 @@ behind the numeric hierarchy of type classes in PureScript's Prelude, aimed at
 people who haven't (necessarily) studied mathematics beyond a high-school
 level.
 
-Status
-------
-
-Beta. There are still a few chapters and appendices I want to write. In
-particular, the following are currently missing:
-
-* A glossary
-* A diagram with an overview of this hierarchy
-
 Why?
 ----
 
