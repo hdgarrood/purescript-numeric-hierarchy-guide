@@ -7,13 +7,18 @@ and it has important applications in 3D graphics and orbital mechanics of
 satellites, due to its ability to represent orientations and rotations of
 objects in three dimensions in a simple and efficient way.
 
+The quaternions were first described in 1843 by William Rowan Hamilton, from
+whom they take their notation: the ring of quaternions is often denoted by
+:math:`\mathbb{H}`, for Hamilton (perhaps because :math:`\mathbb{Q}` was
+already taken by the rationals).
+
 The quaternions can be seen as an extension of the complex numbers in a similar
 sense that the complex numbers can be seen as an extension of the real numbers.
 Where complex numbers can be written :math:`a + bi`, where :math:`a` and
 :math:`b` are real numbers, and :math:`i` is the 'imaginary unit' satisfying
 :math:`i^2 = -1`, quaternions can be written :math:`a + bi + cj + dk`, where
 :math:`a, b, c,` and :math:`d` are real numbers, and :math:`i, j,` and
-:math:`k` are each different imaginary units. Addition is simple enough; as
+:math:`k` are each different 'imaginary units'. Addition is simple enough; as
 with complex numbers, we add component-wise:
 
 .. math::
@@ -58,7 +63,7 @@ We can derive a complete rule for multiplying quaternions by making use of the
 distributive property:
 
 .. math::
-  &(a + bi + cj + dk) * (e + fi + gj + hk)
+  &(a + bi + cj + dk) \cdot (e + fi + gj + hk)
 
   =\; &ae + afi + agj + ahk
 
