@@ -143,8 +143,8 @@ monic.
 .. note::
   For example, in :math:`\mathbb{R}[x]`, we can multiply the polynomial
   :math:`2x + 1` by :math:`\frac{1}{2}` to give :math:`x + \frac{1}{2}`, which
-  is monic. Note that we could do this if we were working in
-  :math:`\mathbb{Z}[x]`.
+  is monic. Note that we could not do this if we were working in
+  :math:`\mathbb{Z}[x]`, since :math:`\frac{1}{2}` is not an integer.
 
 Let :math:`c` be the leading coefficient of :math:`b`, so that :math:`c^{-1}b`
 is monic. Now we can use the previous result to divide :math:`a` by
