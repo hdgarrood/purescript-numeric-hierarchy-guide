@@ -8,6 +8,7 @@ Table of contents
    :maxdepth: 2
 
    introduction
+
    logic
    monoids
    groups
@@ -20,5 +21,7 @@ Table of contents
    polynomials
    euclidean-rings
    quaternions
+
+   epilogue
 
    appendix/index
