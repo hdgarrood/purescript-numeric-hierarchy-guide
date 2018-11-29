@@ -30,8 +30,8 @@ a `Stage 3 TC39 proposal <https://tc39.github.io/proposal-bigint/>`_, and they
 `have already landed in (at least) Chrome <https://developers.google.com/web/updates/2018/05/bigint>`_.
 
 **The real numbers,** :math:`\mathbb{R}`. These are notoriously difficult to
-represent in the finite world of computers, since :math:`\mathbb{R}` is such a
-monstrously large set that you can't even pair its elements up with the
+represent in the discrete world of computers, since :math:`\mathbb{R}` is such
+a monstrously large set that you can't even pair its elements up with the
 elements of :math:`\mathbb{N}`. You'll essentially be forced to compromise and
 to work with a simpler set...
 
@@ -39,7 +39,7 @@ to work with a simpler set...
 but unlike the reals, they *can* in fact be paired up with the natural numbers,
 which means you can faithfully represent them on a computer (as long as you
 don't run out of memory). However, it may be prohibitively expensive in time or
-memory or both to do this.
+memory (or both) to do this.
 
 1. The ``Number`` type built in to the language, which is a double-precision
    IEEE 754 floating point number. This type does of course have a number of
