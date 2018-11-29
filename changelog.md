@@ -1,5 +1,21 @@
 # Changelog
 
+## Beta, 2018-11-29
+
+* New chapter: quaternions
+* New chapter: epilogue
+* Additions to the appendix:
+  * Hierarchy cheatsheet diagram
+  * Discussion of PureScript implementations of mathematical objects from the
+    guide
+* Add discussion of converses and contraposition in the logic chapter
+* Add a new exercise in the groups chapter for showing that
+  `g^{-1} h^{-1} = (hg)^{-1}`
+* Clarify groups chapter to help avoid confusion between a set X and the
+  symmetric group on that set S(X).
+* Add the boolean semiring as an example of a semiring
+* Various minor formatting and wording tweaks
+
 ## Update 4, 2017-07-22
 
 * New chapter: the Euclidean Algorithm
