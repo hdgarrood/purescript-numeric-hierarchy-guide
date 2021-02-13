@@ -1,9 +1,9 @@
 Introduction
 ============
 
-Welcome to this guide, which aims to give an introduction to the mathematics
-behind the numeric hierarchy of type classes in PureScript's Prelude, aimed at
-people who haven't (necessarily) studied mathematics beyond a high-school
+Welcome! This guide aims to give you an introduction to the mathematics behind
+the numeric hierarchy of type classes in PureScript's Prelude, and it's aimed
+at people who haven't (necessarily) studied mathematics beyond a high-school
 level.
 
 Why?
@@ -13,10 +13,10 @@ Normally, algebraic structures like rings or fields are only introduced to
 students at undergraduate level. One unfortunate side-effect of this is that
 lots of the material currently available on the web which describes these
 concepts is sometimes a little inaccessible for people who haven't studied
-mathematics past a high-school level. My aim with these posts is to help people
-develop intuition for what these structures are and how they can be used so
+mathematics past a high-school level. My aim with this guide is to help people
+develop intuition for what these structures are and how they can be used, so
 that that knowledge can be applied in PureScript code. I also hope that I can
-help persuade you of the beauty of mathematics and convince you that it is
+help you see a glimpse of the beauty of mathematics and convince you that it is
 worth studying in its own right.
 
 I want to stress that it is *not* necessary to read and understand all of this
