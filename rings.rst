@@ -125,13 +125,13 @@ y` as a shorthand for :math:`x + (-y)`.
 
 An important thing to note is that in a ring, multiplication need not be
 commutative! A ring in which the multiplication operation is commutative is
-called a *commutative ring.* So far, all the rings we have seen have
+called a *commutative ring.* So far, all the rings we have seen have been
 commutative, but we will soon see some examples of non-commutative rings.
 
 One last thing that I should mention quickly: just as there is a trivial monoid
 and a trivial group, there is a trivial ring with just one element, usually
 written :math:`\{0\}`. This ring is called the **zero ring**. It is not very
-interesting so we often rule it out by saying we a dealing with a "non-zero
+interesting so we often rule it out by saying we are dealing with a "non-zero
 ring"; this phrase is nothing more than a shorthand for "any ring but the zero
 ring".
 
