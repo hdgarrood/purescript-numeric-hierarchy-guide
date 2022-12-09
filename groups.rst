@@ -315,8 +315,8 @@ Surjectivity
 
 Another problem that we saw with :math:`f_A` is that we can't invert a function
 if there is some element in the codomain which isn't 'hit' by the function.
-That is, if there's no element :math:`y` in the codomain such that :math:`f(x)
-= y` for some :math:`x` in the domain, we can't invert it, because we don't
+That is, if there's some element :math:`y` in the codomain such that there's no :math:`x`
+in the domain for which :math:`f(x) = y`, we can't invert it, because we don't
 have anything to send :math:`y` to. The function :math:`f : \mathbb{R}
 \rightarrow \mathbb{R}` defined by :math:`f(x) = x^2` also suffers from this
 problem: there's no real number :math:`x` such that :math:`x^2 = -1`, for
