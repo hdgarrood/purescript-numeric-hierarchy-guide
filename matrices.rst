@@ -330,13 +330,13 @@ We start by splitting the right-hand matrix, :math:`B`, into columns:
 Then we multiply each of these by the left-hand matrix :math:`A`. We already
 know that the result of multiplying :math:`A` by :math:`(1,1)` is
 :math:`(1,2)`. The result of multiplying :math:`A` by the other column,
-:math:`(5,3)`, is :math:`(5,6)` — again, I recommend checking this.  Finally we
+:math:`(5,3)`, is :math:`(5,14)` — again, I recommend checking this.  Finally we
 put these columns back together:
 
 .. math::
   AB = \begin{bmatrix}
     1 & 5 \\
-    2 & 6
+    2 & 14
   \end{bmatrix}
 
 In general, then, a product of :math:`2 \times 2` matrices looks like this:
